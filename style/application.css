@@ -1,23 +1,23 @@
-.a4-size {
-  height: 1122.8855685456px;
-  width: 794px; }
+body {
+  font-family: 'Assistant', sans-serif; }
 
-.a4-size .row {
-  height: 100%; }
+.a4-size {
+  min-height: 1122.8855685456px;
+  min-width: 794px; }
+  .a4-size .row {
+    height: 100%; }
 
 .main-title {
   height: 200px;
   margin-bottom: 80px; }
-
-.main-title .title {
-  font-size: 60px;
-  letter-spacing: 4px;
-  margin-bottom: 0; }
-
-.main-title .job-title {
-  font-size: 18px;
-  padding: 8px 0;
-  letter-spacing: 4px; }
+  .main-title .title {
+    font-size: 60px;
+    letter-spacing: 4px;
+    margin-bottom: 0; }
+  .main-title .job-title {
+    font-size: 18px;
+    padding: 8px 0;
+    letter-spacing: 4px; }
 
 .content {
   height: 100%;
@@ -28,21 +28,18 @@
 
 .biography {
   background-color: #1CBFAF; }
-
-.biography .details {
-  color: white; }
+  .biography .details {
+    color: white; }
 
 .main-details {
   background-color: #f9f9f9; }
-
-.main-details .details {
-  color: #1CBFAF; }
+  .main-details .details {
+    color: #1CBFAF; }
 
 .avatar {
   height: 100%; }
-
-.avatar img {
-  height: 100%; }
+  .avatar img {
+    height: 100%; }
 
 .title, .job-title {
   text-transform: uppercase; }
@@ -64,27 +61,22 @@
 
 .previous-job-information {
   color: #1CBFAF; }
-
-.previous-job-information .work-period {
-  font-size: 90%;
-  margin-bottom: 10px; }
-
-.previous-job-information .work-period::before {
-  content: '\2014 \00A0'; }
-
-.previous-job-information .work-period::after {
-  content: '\2014 \00A0'; }
+  .previous-job-information .work-period {
+    font-size: 90%;
+    margin-bottom: 10px; }
+    .previous-job-information .work-period::before {
+      content: '\2014 \00A0'; }
+    .previous-job-information .work-period::after {
+      content: '\2014 \00A0'; }
 
 .blockquote-style {
   border-left: 4px solid #d5d5d5;
   margin-left: 12px; }
-
-.blockquote-style li {
-  margin-left: 8px;
-  margin-bottom: 8px; }
-
-.blockquote-style li::before {
-  content: '\2014 \0020'; }
+  .blockquote-style li {
+    margin-left: 8px;
+    margin-bottom: 8px; }
+    .blockquote-style li::before {
+      content: '\2014 \0020'; }
 
 .hobbies-image {
   filter: invert(100%);
@@ -95,9 +87,10 @@
 
 .skills {
   line-height: 2; }
-
-.skills .progress {
-  height: 10px; }
+  .skills .progress {
+    height: 10px; }
+    .skills .progress .progress-bar {
+      background-color: #17a2b8 !important; }
 
 .text-dark-gray {
   color: #1CBFAF !important; }
@@ -113,7 +106,5 @@ li.details__skills {
 
 .company-name a {
   font-size: 18px; }
-
-/*# sourceMappingURL=style.css.map */
 
 /*# sourceMappingURL=application.css.map */
