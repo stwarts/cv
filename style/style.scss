@@ -1,0 +1,173 @@
+$paper-ratio: 1.4142135624;
+$width: 794px;
+
+$dark-gray: #1CBFAF;
+$light-gray: #f9f9f9;
+$middle-gray: #d5d5d5;
+$blue-aqua: #66cccc;
+
+$theme-color: $dark-gray;
+$sub-color: $light-gray;
+$title-color: $blue-aqua;
+$text-color: $middle-gray;
+$company-name-color: #666666;
+
+body {
+  font-family: 'Assistant', sans-serif;
+}
+
+.a4-size {
+  height: $width * $paper-ratio;
+  width: $width;
+
+  .row {
+    height: 100%;
+  }
+}
+
+.main-title {
+  height: 200px;
+  margin-bottom: 80px;
+
+  .title {
+    font-size: 60px;
+    letter-spacing: 4px;
+    margin-bottom: 0;
+  }
+
+  .job-title {
+    font-size: 18px;
+    padding: 8px 0;
+    letter-spacing: 4px;
+  }
+}
+
+.content {
+  height: 100%;
+  padding: 80px 0;
+}
+
+.section {
+  margin-bottom: 32px;
+}
+
+.biography {
+  background-color: $theme-color;
+
+  .details {
+    color: white;
+  }
+}
+
+.main-details {
+  background-color: $sub-color;
+
+  .details {
+    color: $theme-color;
+  }
+}
+
+.avatar {
+  height: 100%;
+
+  img {
+    height: 100%;
+  }
+}
+
+.title, .job-title {
+  text-transform: uppercase;
+}
+
+.title {
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: $title-color;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.details {
+  color: $text-color;
+}
+
+.job-title {
+  color: white;
+  background-color: $theme-color;
+}
+
+.previous-job-information {
+  color: $theme-color;
+
+  .work-period {
+    font-size: 90%;
+    margin-bottom: 10px;
+
+    &::before {
+      content: '\2014 \00A0';
+    }
+
+    &::after {
+      content: '\2014 \00A0';
+    }
+  }
+}
+
+.blockquote-style {
+  border-left: 4px solid $middle-gray;
+  margin-left: 12px;
+
+  li {
+    margin-left: 8px;
+    margin-bottom: 8px;
+
+    &::before {
+      content: '\2014 \0020';
+    }
+  }
+}
+
+.hobbies-image {
+  filter: invert(100%);
+  width: 32px;
+}
+
+.bg-aqua {
+  background-color: $title-color;
+}
+
+.skills {
+  line-height: 2;
+
+  .progress {
+    height: 10px;
+
+    .progress-bar {
+      // background-color: #17a2b8 !important;
+   
+    }
+  }
+}
+
+.text-dark-gray {
+  color: $dark-gray !important;
+}
+
+.font-smaller {
+  font-size: 95%;
+}
+
+li.details__skills {
+  margin-bottom: 4px;
+}
+
+.line-height-fit {
+  line-height: 1;
+}
+
+.company-name {
+  a {
+    font-size: 18px;
+  }
+}
