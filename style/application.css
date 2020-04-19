@@ -55,19 +55,13 @@ body {
 .details {
   color: #d5d5d5; }
 
-.job-title {
-  color: white;
-  background-color: #666666; }
-
-.previous-job-information {
-  color: #666666; }
-  .previous-job-information .work-period {
-    font-size: 90%;
-    margin-bottom: 10px; }
-    .previous-job-information .work-period::before {
-      content: '\2014 \00A0'; }
-    .previous-job-information .work-period::after {
-      content: '\2014 \00A0'; }
+.previous-job-information .work-period {
+  font-size: 90%;
+  margin-bottom: 10px; }
+  .previous-job-information .work-period::before {
+    content: '\2014 \00A0'; }
+  .previous-job-information .work-period::after {
+    content: '\2014 \00A0'; }
 
 .blockquote-style {
   border-left: 4px solid #FFC70B;
@@ -82,29 +76,7 @@ body {
   filter: invert(100%);
   width: 32px; }
 
-.bg-aqua {
-  background-color: #66cccc; }
-
-.skills {
-  line-height: 2; }
-  .skills .progress {
-    height: 10px; }
-    .skills .progress .progress-bar {
-      background-color: #17a2b8 !important; }
-
-.text-dark-gray {
-  color: #666666 !important; }
-
-.font-smaller {
-  font-size: 95%; }
-
 li.details__skills {
   margin-bottom: 4px; }
-
-.line-height-fit {
-  line-height: 1; }
-
-.company-name a {
-  font-size: 18px; }
 
 /*# sourceMappingURL=application.css.map */

@@ -93,14 +93,7 @@ body {
   color: $text-color;
 }
 
-.job-title {
-  color: white;
-  background-color: $theme-color;
-}
-
 .previous-job-information {
-  color: $theme-color;
-
   .work-period {
     font-size: 90%;
     margin-bottom: 10px;
@@ -134,40 +127,6 @@ body {
   width: 32px;
 }
 
-.bg-aqua {
-  background-color: $title-color;
-}
-
-.skills {
-  line-height: 2;
-
-  .progress {
-    height: 10px;
-
-    .progress-bar {
-      background-color: #17a2b8 !important;
-    }
-  }
-}
-
-.text-dark-gray {
-  color: $dark-gray !important;
-}
-
-.font-smaller {
-  font-size: 95%;
-}
-
 li.details__skills {
   margin-bottom: 4px;
-}
-
-.line-height-fit {
-  line-height: 1;
-}
-
-.company-name {
-  a {
-    font-size: 18px;
-  }
 }
