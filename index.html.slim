@@ -21,73 +21,14 @@ html
           .content.biography.text-center.d-flex.flex-column.align-items-center
             .main-title
               .avatar
-                img.rounded-circle[src="./resource/avatar.jpg"]
+                / img.rounded-circle[src="./resource/avatar.jpg"]
+                img.rounded-circle[src="https://robohash.org/stwart"]
             .personal-information
-              .section.contact
-                .title
-                  | CONTACT
-                .details.font-smaller
-                  .phone-number
-                    | Tel: 0934001024
-                  .email
-                    | Gmail: npcuong.011308
-                  .address
-                    | Phu Nhuan Distric, HCMC
-              .section.education
-                .title
-                  | EDUCATION
-                .details
-                  .school-name
-                    b
-                      | University of Science
-                  .faculty.font-smaller
-                    | Information Technology
-              .section.skills
-                .title
-                  | Certificates
-                .details.font-smaller.line-height-fit
-                  | TOEIC - 805
-              .section.skills
-                .title
-                  | SKILLS
-                .details.text-left
-                  ul.list-unstyled
-                    li.details__skills
-                      .font-smaller
-                        | English
-                      .progress
-                        .progress-bar.bg-aqua[aria-valuemax="100" aria-valuemin="0" aria-valuenow="75" role="progressbar" style="width: 75%"]
-                    li.details__skills
-                      .font-smaller
-                        | Rails
-                      .progress
-                        .progress-bar.bg-danger[aria-valuemax="100" aria-valuemin="0" aria-valuenow="62" role="progressbar" style="width: 62%"]
-                    li.details__skills
-                      .font-smaller
-                        | git
-                      .progress
-                        .progress-bar.bg-dark[aria-valuemax="100" aria-valuemin="0" aria-valuenow="70" role="progressbar" style="width: 60%"]
-                    li.details__skills
-                      .font-smaller
-                        | HTML/CSS
-                      .progress
-                        .progress-bar.bg-info[aria-valuemax="100" aria-valuemin="0" aria-valuenow="67" role="progressbar" style="width: 57%"]
-                    li.details__skills
-                      .font-smaller
-                        | JavaScript
-                      .progress
-                        .progress-bar.bg-warning[aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar" style="width: 40%"]
-              .section.hobbies
-                .title
-                  | Hobbies
-                .details
-                  ul.list-unstyled.list-inline
-                    li.list-inline-item
-                      img.hobbies-image[src="./style/camera-63e2be0f1999a9f35557fa3b0ce4d1fa86ba875dd8b65c302c4f0ec592c13b9b.png"]
-                    li.list-inline-item
-                      img.hobbies-image[src="./style/dota-2-a5fb1872d541db80d168a3800ef558e0762924eb0d658d09840ef8069484a315.png"]
-                    li.list-inline-item
-                      img.hobbies-image[src="./style/rubiks-cube-e033c008396548951ff9167149ea8208cb6bff790ce808df9ae826bfaf2ecb61.png"]
+              == Slim::Template.new('./partials/contact.html.slim').render
+              == Slim::Template.new('./partials/education.html.slim').render
+              == Slim::Template.new('./partials/skills.html.slim').render
+              == Slim::Template.new('./partials/hobbies.html.slim').render
+
         .col-4.p-0 class='w-2/3'
           .content.main-details.px-4
             .d-flex.flex-column.justify-content-center.main-title.text-center

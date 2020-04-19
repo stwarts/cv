@@ -27,14 +27,14 @@ body {
   margin-bottom: 32px; }
 
 .biography {
-  background-color: #1CBFAF; }
+  background-color: #666666; }
   .biography .details {
     color: white; }
 
 .main-details {
   background-color: #f9f9f9; }
   .main-details .details {
-    color: #1CBFAF; }
+    color: #666666; }
 
 .avatar {
   height: 100%; }
@@ -57,10 +57,10 @@ body {
 
 .job-title {
   color: white;
-  background-color: #1CBFAF; }
+  background-color: #666666; }
 
 .previous-job-information {
-  color: #1CBFAF; }
+  color: #666666; }
   .previous-job-information .work-period {
     font-size: 90%;
     margin-bottom: 10px; }
@@ -70,7 +70,7 @@ body {
       content: '\2014 \00A0'; }
 
 .blockquote-style {
-  border-left: 4px solid #d5d5d5;
+  border-left: 4px solid #FFC70B;
   margin-left: 12px; }
   .blockquote-style li {
     margin-left: 8px;
@@ -93,7 +93,7 @@ body {
       background-color: #17a2b8 !important; }
 
 .text-dark-gray {
-  color: #1CBFAF !important; }
+  color: #666666 !important; }
 
 .font-smaller {
   font-size: 95%; }

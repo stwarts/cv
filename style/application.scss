@@ -1,11 +1,12 @@
 $paper-ratio: 1.4142135624;
 $width: 794px;
 
-$dark-gray: #1CBFAF;
+$silver-gray: #edf0f3;
+$dark-gray: #666666;
 $light-gray: #f9f9f9;
 $middle-gray: #d5d5d5;
 $blue-aqua: #66cccc;
-
+$accent-border-color: #FFC70B;
 $theme-color: $dark-gray;
 $sub-color: $light-gray;
 $title-color: $blue-aqua;
@@ -115,7 +116,7 @@ body {
 }
 
 .blockquote-style {
-  border-left: 4px solid $middle-gray;
+  border-left: 4px solid $accent-border-color;
   margin-left: 12px;
 
   li {
@@ -145,7 +146,6 @@ body {
 
     .progress-bar {
       background-color: #17a2b8 !important;
-   
     }
   }
 }
