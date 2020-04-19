@@ -1,3 +1,9 @@
 @tailwind base;
+
 @tailwind components;
+
 @tailwind utilities;
+
+.title {
+  @apply uppercase text-blue-800 font-bold tracking-wide;
+}
