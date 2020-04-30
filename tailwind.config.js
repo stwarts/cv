@@ -18,6 +18,15 @@ module.exports = {
       '90': '0.9',
       '100': '1',
     },
+    letterSpacing: {
+      tighter: '-.05em',
+      tight: '-.025em',
+      normal: '0',
+      wide: '.025em',
+      wider: '.05em',
+      widest: '.1em',
+      x2widest: '.2em',
+    },
     variants: {},
     plugins: [],
   }
