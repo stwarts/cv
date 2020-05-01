@@ -33,13 +33,19 @@ html
               span
                 | Download as PDF
           .text-left.d-flex.flex-column.align-items-center.px-8
-            .personal-information
-              == Slim::Template.new('./partials/about_me.html.slim').render
-              == Slim::Template.new('./partials/education.html.slim').render
-              == Slim::Template.new('./partials/skills.html.slim').render
-              == Slim::Template.new('./partials/contact.html.slim').render
+            div
+              .mb-4
+                == Slim::Template.new('./partials/about_me.html.slim').render
+              .mb-4
+                == Slim::Template.new('./partials/education.html.slim').render
+              .mb-4
+                == Slim::Template.new('./partials/skills.html.slim').render
+              .mb-4
+                == Slim::Template.new('./partials/contact.html.slim').render
 
         .p-0 class='w-2/3'
           .px-8
-            == Slim::Template.new('./partials/experience.html.slim').render
-            == Slim::Template.new('./partials/projects.html.slim').render
+            .mb-4
+              == Slim::Template.new('./partials/experience.html.slim').render
+            .mb-4
+              == Slim::Template.new('./partials/projects.html.slim').render
