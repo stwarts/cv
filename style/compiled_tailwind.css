@@ -14059,10 +14059,12 @@ video {
 }
 
 .title {
+  font-family: 'Open Sans Condensed', sans-serif;
   text-transform: uppercase;
   color: #2c5282;
   font-weight: 700;
-  letter-spacing: .025em;
+  letter-spacing: .05em;
+  font-size: 1.125rem;
 }
 
 @media (min-width: 640px) {

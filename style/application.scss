@@ -26,82 +26,6 @@ body {
   }
 }
 
-.main-title {
-  height: 200px;
-  margin-bottom: 80px;
-
-  .title {
-    font-size: 60px;
-    letter-spacing: 4px;
-    margin-bottom: 0;
-  }
-}
-
-.content {
-  height: 100%;
-  padding: 80px 0;
-}
-
-.section {
-  margin-bottom: 32px;
-}
-
-.biography {
-  background-color: $theme-color;
-
-  .details {
-    color: white;
-  }
-}
-
-.main-details {
-  background-color: $sub-color;
-
-  .details {
-    color: $theme-color;
-  }
-}
-
-.avatar {
-  height: 100%;
-
-  img {
-    height: 100%;
-  }
-}
-
-.title, .job-title {
-  text-transform: uppercase;
-}
-
-.title {
-  font-size: 20px;
-  letter-spacing: 1px;
-  color: $title-color;
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.details {
-  color: $text-color;
-}
-
-.previous-job-information {
-  .work-period {
-    font-size: 90%;
-    margin-bottom: 10px;
-
-    &::before {
-      content: '\2014 \00A0';
-    }
-
-    &::after {
-      content: '\2014 \00A0';
-    }
-  }
-}
-
 .blockquote-style {
   border-left: 4px solid $accent-border-color;
   margin-left: 12px;
@@ -114,13 +38,4 @@ body {
       content: '\2014 \0020';
     }
   }
-}
-
-.hobbies-image {
-  filter: invert(100%);
-  width: 32px;
-}
-
-li.details__skills {
-  margin-bottom: 4px;
 }
