@@ -13,24 +13,18 @@ html
   body
     / Set h-px fix the issue
     / https://stackoverflow.com/questions/8468066/child-inside-parent-with-min-height-100-not-inheriting-height
-    .a4-size.h-px.relative
+    .a4-size.h-px.relative.text-blue-800
       .flex.h-full.w-full.absolute style='z-index: -1;'
-        .bg-gray-200 class='w-1/3'
+        .bg-gray-300 class='w-1/3'
         .bg-gray-100 class='w-2/3'
 
-      .flex.bg-gray-300
-        div class='w-3/4'
-          .text-center
-            .text-6xl.uppercase.tracking-wider style="font-family: 'Open Sans Condensed', sans-serif;"
-              | Stewart Nguyen
-            .mb-4
-              .text-xl.uppercase.tracking-x2widest.bg-blue-800.text-white.py-2
-                | Ruby on Rails developer
+      .bg-gray-200.py-8.text-center
+        .text-6xl.uppercase.tracking-x2widest style="font-family: 'Open Sans Condensed', sans-serif;"
+          | Stewart Nguyen
+        .text-xl.uppercase.tracking-x2widest.bg-blue-800.text-white.py-2.mx-auto style='width: 650px;'
+          | Ruby on Rails developer
 
-        div class='w-1/4'
-          == Slim::Template.new('./partials/contact.html.slim').render
-
-      .flex.text-blue-800.absolute.h-full.z-10.mt-12.z-10
+      .flex.absolute.h-full.z-10.mt-12.z-10
         .p-0 class='w-1/3'
           /.widget.download-widget
             a.btn[href="https://github.com/stwart-nguyen/cv/raw/master/resource/Stewart%20Nguyen.pdf" target="_top"]
@@ -51,6 +45,7 @@ html
                     | 1 year experience as a Rails developer, in charge of writing effective, readable and maintainable back-end as well as debugging and implementing fair front-end interface. Punctual, reponsible.
               == Slim::Template.new('./partials/education.html.slim').render
               == Slim::Template.new('./partials/skills.html.slim').render
+              == Slim::Template.new('./partials/contact.html.slim').render
 
         .p-0 class='w-2/3'
           .px-8
