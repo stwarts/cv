@@ -5,5 +5,7 @@
 @tailwind utilities;
 
 .title {
-  @apply uppercase text-blue-800 font-bold tracking-wide;
+  font-family: 'Open Sans Condensed', sans-serif;
+
+  @apply uppercase text-blue-800 font-bold tracking-wider text-lg;
 }
