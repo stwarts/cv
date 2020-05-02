@@ -8,12 +8,8 @@ body {
 }
 
 .a4-size {
-  min-height: $width * $paper-ratio;
-  min-width: $width;
-
-  .row {
-    height: 100%;
-  }
+  height: $width * $paper-ratio;
+  width: $width;
 }
 
 .blockquote-style {

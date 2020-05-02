@@ -11,15 +11,13 @@ html
     link href="https://fonts.googleapis.com/css?family=Assistant:400,700&display=swap" rel="stylesheet"
 
   body
-    / Set h-px fix the issue
-    / https://stackoverflow.com/questions/8468066/child-inside-parent-with-min-height-100-not-inheriting-height
-    .a4-size.h-px.relative
+    .a4-size.relative.mx-auto
       / Background
       .flex.h-full.w-full.absolute.z-0
         .bg-gray-200 class='w-1/3'
         .bg-gray-100 class='w-2/3'
 
-      .flex.text-blue-800.absolute.h-full.z-10.mt-12.z-10
+      .flex.text-blue-800.absolute.z-10.mt-12
         .p-0 class='w-1/3'
           /.widget.download-widget
             a.btn[href="https://github.com/stwart-nguyen/cv/raw/master/resource/Stewart%20Nguyen.pdf" target="_top"]
