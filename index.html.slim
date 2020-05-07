@@ -11,13 +11,24 @@ html
     link href="https://fonts.googleapis.com/css?family=Assistant:400,700&display=swap" rel="stylesheet"
 
   body
+<<<<<<< HEAD
     .a4-size.relative.mx-auto
+=======
+    .a4-size.relative.text-blue-800.mx-auto
+>>>>>>> verions/one-1-third-2-third
       / Background
-      .flex.h-full.w-full.absolute.z-0
-        .bg-gray-200 class='w-1/3'
+      .flex.h-full.w-full.absolute style='z-index: -1;'
+        .bg-gray-300 class='w-1/3'
         .bg-gray-100 class='w-2/3'
 
-      .flex.text-blue-800.absolute.z-10.mt-12
+      / Real content
+      .bg-gray-200.py-8.text-center
+        .text-5xl.uppercase.tracking-x2widest style="font-family: 'Open Sans Condensed', sans-serif;"
+          | Stewart Nguyen
+        .text-lg.uppercase.tracking-x2widest.bg-blue-800.text-white.py-1.mx-auto style='width: 500px;'
+          | Ruby on Rails developer
+
+      .flex.absolute.mt-8.z-10
         .p-0 class='w-1/3'
           /.widget.download-widget
             a.btn[href="https://github.com/stwart-nguyen/cv/raw/master/resource/Stewart%20Nguyen.pdf" target="_top"]
@@ -25,29 +36,20 @@ html
                 path[fill-rule="evenodd" d="M9 12h2l-3 3-3-3h2V7h2v5zm3-8c0-.44-.91-3-4.5-3C5.08 1 3 2.92 3 5 1.02 5 0 6.52 0 8c0 1.53 1 3 3 3h3V9.7H3C1.38 9.7 1.3 8.28 1.3 8c0-.17.05-1.7 1.7-1.7h1.3V5c0-1.39 1.56-2.7 3.2-2.7 2.55 0 3.13 1.55 3.2 1.8v1.2H12c.81 0 2.7.22 2.7 2.2 0 2.09-2.25 2.2-2.7 2.2h-2V11h2c2.08 0 4-1.16 4-3.5C16 5.06 14.08 4 12 4z"]
               span
                 | Download as PDF
-          .text-left.d-flex.flex-column.align-items-center.pl-8
+          .text-right.d-flex.flex-column.align-items-center.px-8
             div
-              .avatar
-                / img.rounded-circle[src="./resource/avatar.jpg"]
-            .personal-information
-              == Slim::Template.new('./partials/contact.html.slim').render
-              == Slim::Template.new('./partials/education.html.slim').render
-              == Slim::Template.new('./partials/skills.html.slim').render
+              .mb-6
+                == Slim::Template.new('./partials/about_me.html.slim').render
+              .mb-6
+                == Slim::Template.new('./partials/contact.html.slim').render
+              .mb-6
+                == Slim::Template.new('./partials/education.html.slim').render
+              .mb-6
+                == Slim::Template.new('./partials/skills.html.slim').render
 
         .p-0 class='w-2/3'
           .px-8
-            .text-center
-              .text-6xl.uppercase.tracking-wider style="font-family: 'Open Sans Condensed', sans-serif;"
-                | Stewart Nguyen
-              .mb-4
-                .text-xl.uppercase.tracking-x2widest.bg-blue-800.text-white.py-2
-                  | Ruby on Rails developer
-            div
-              .title
-                | About me
-              .opacity-85.description.text-justify
-                p
-                  | 1 year experience as a Rails developer, in charge of writing effective, readable and maintainable back-end as well as debugging and implementing fair front-end interface. Punctual, reponsible.
-
-            == Slim::Template.new('./partials/experience.html.slim').render
-            == Slim::Template.new('./partials/projects.html.slim').render
+            .mb-6
+              == Slim::Template.new('./partials/experience.html.slim').render
+            .mb-6
+              == Slim::Template.new('./partials/projects.html.slim').render

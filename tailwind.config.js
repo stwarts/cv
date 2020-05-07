@@ -1,6 +1,10 @@
 module.exports = {
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'vivid-yellow-500': '#FFC70B'
+      },
+    },
     opacity: {
       '0': '0',
       '25': '0.25',

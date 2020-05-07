@@ -5,13 +5,4 @@ body {
   height: 1122.8855685456px;
   width: 794px; }
 
-.blockquote-style {
-  border-left: 4px solid #FFC70B;
-  margin-left: 12px; }
-  .blockquote-style li {
-    margin-left: 8px;
-    margin-bottom: 8px; }
-    .blockquote-style li::before {
-      content: '\2014 \0020'; }
-
 /*# sourceMappingURL=application.css.map */

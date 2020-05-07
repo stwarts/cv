@@ -11,17 +11,3 @@ body {
   height: $width * $paper-ratio;
   width: $width;
 }
-
-.blockquote-style {
-  border-left: 4px solid $accent-border-color;
-  margin-left: 12px;
-
-  li {
-    margin-left: 8px;
-    margin-bottom: 8px;
-
-    &::before {
-      content: '\2014 \0020';
-    }
-  }
-}
