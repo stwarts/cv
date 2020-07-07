@@ -37,6 +37,8 @@ html
           .text-right.d-flex.flex-column.align-items-center.px-8
             div
               .mb-6
+                img.rounded-full src='./resource/avatar.png'
+              .mb-6
                 == Slim::Template.new('./partials/about_me.html.slim').render
               .mb-6
                 == Slim::Template.new('./partials/contact.html.slim').render
