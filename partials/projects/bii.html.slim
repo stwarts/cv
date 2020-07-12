@@ -9,7 +9,7 @@ div
     ul.border-l-4.pl-2.border-vivid-yellow-500.relative
       .border-t-4.border-gray-100.absolute.w-full style='left: -4px'
       .border-t-4.border-gray-100.absolute.w-full style='left: -4px; bottom: 0px'
-      li.mb-1 &mdash; Work directly with client to clarify business objective and brainstorm optimal ideas
+      li.mb-1 &mdash; Communicated directly with client to clarify business objective and brainstormed optimal ideas
       / Which libraries were used? Why was it slow?
       / More details about the inspecting
       / => ActiveRecord execution time, N+1 queries
@@ -18,5 +18,17 @@ div
       / Performance Testing => ruby-jmeter
       li.mb-1
         |&mdash; Improved poor API's and dashboard's performance
-          by inspecting though source code and log files to identify bottleneck and unproductive parts then correct them
+        |&nbsp;by inspecting though legacy source code and log files
+      / Figured out the DB connection error for reaching maximum 25 connections
+      /   which happended in 06/2018 (client confirmed)
+      / Found out system could handle around 600 concurrent users per second
+      / Build test scenarios based on what users would do on web and mobile
+      /   then ran test base on those scenarios, not arbitrary api
+      / Test's configuration was determinated by monitoring
+      /   requests per second (rps) on Skylight carefully through peak hours everyday
+      / Which specifications for this test?
+      / => ramp-time, loop, user count, etc.
+      li.mb-1
+        |&mdash; Performed Stress test using gem ruby-jmeter to determine bottleneck, system errors
+        |&nbsp;when platform reached its threshold
       li.mb-1 &mdash; Integrated payment gateway and other 3rd-parties to enhance user experience, attracted 10k+ new customers
