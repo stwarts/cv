@@ -9,8 +9,8 @@ div
         | Mar 2018 - Present&nbsp;
     .opacity-85
       ul.border-l-4.pl-2.border-vivid-yellow-500.relative
-        .border-t-4.border-gray-100.absolute.w-full style='left: -4px'
-        .border-t-4.border-gray-100.absolute.w-full style='left: -4px; bottom: 0px'
+        == Slim::Template.new('partials/utils/abs_trans_top_border.html.slim').render
+        == Slim::Template.new('partials/utils/abs_trans_bottom_border.html.slim').render
         li.mb-1 
           | &mdash; Analyze client's requirements thoroughly before development in association with project assistants
         li.mb-1
