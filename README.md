@@ -34,5 +34,6 @@ Have a look at: https://stwart-nguyen.github.io/cv  :)
     `npx tailwindcss build <input> -o <output>`
 
 2. Converting PDF format
-Install: `npm i chromehtml2pdf`
-`chromehtml2pdf --out=<filename>.pdf --format=A4 --printBackground=true file:///path/to/input/file.html`
+    + Install: `npm i chromehtml2pdf`
+
+    + `chromehtml2pdf --out=<filename>.pdf --format=A4 --printBackground=true file:///path/to/input/file.html`
