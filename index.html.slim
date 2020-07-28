@@ -11,6 +11,7 @@ html
     link[rel="stylesheet" media="all" href="./style/download_button.css"]
     link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700&display=swap" rel="stylesheet"
     link href="https://fonts.googleapis.com/css?family=Assistant:400,700&display=swap" rel="stylesheet"
+    link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'
 
   body class="mx-auto my-auto lg:my-10 md:my-5"
     .a4-size.relative.text-blue-800.mx-auto style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"
@@ -44,9 +45,11 @@ html
                 == Slim::Template.new('./partials/contact.html.slim').render
               .mb-6
                 == Slim::Template.new('./partials/education.html.slim').render
-              .mb-6
+              .mb-4
                 == Slim::Template.new('./partials/skills.html.slim').render
-
+              div
+                == Slim::Template.new('./partials/socials.html.slim').render
+              
         .p-0 class='w-2/3'
           .px-8
             .mb-6
