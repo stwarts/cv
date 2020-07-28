@@ -1,10 +1,21 @@
 doctype html
-html
+<html amp>
   head
-    meta[http-equiv="Content-Type" content="text/html; charset=UTF-8"]
-    meta name="viewport" content="width=device-width, initial-scale=0.5"
+    meta charset='utf-8'
+    meta name='viewport' content='width=device-width, minimum-scale=1, initial-scale=0.5'
+    <meta name="description" content="This is Stewart's résume">
+    <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    / Import other AMP Extensions here -->
+    <style amp-custom>
+    /* Add your styles here */
+    </style>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+    link rel='canonical' href='https://stwart-nguyen.github.io/cv'
 
     title Stewart
+    meta
 
     /! build:css:dist index.min.css
     link[rel="stylesheet" media="all" href="./style/application.css"]
@@ -67,3 +78,4 @@ html
               == Slim::Template.new('./partials/experience.html.slim').render
             .mb-6
               == Slim::Template.new('./partials/projects.html.slim').render
+</html>
