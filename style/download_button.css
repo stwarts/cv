@@ -3,10 +3,11 @@ body{margin:0}a{color:#24292e;text-decoration:none;outline:0}.octicon{display:in
 .download-widget {
   position: fixed;
   z-index: 100;
-  bottom: 0;
+  top: 0;
   right: 0;
 }
 
 .download-widget a {
-  height: 20px;
+  height: 24px;
+  line-height: 18px;
 }
