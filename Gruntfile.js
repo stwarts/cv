@@ -12,14 +12,25 @@ module.exports = function (grunt) {
     uncss: {
       dist: {
         files: {
-          'style/index.min.css': 'index.html'
+          'style/index.uncss': 'index.html'
+        }
+      }
+    },
+    cssmin: {
+      options: {
+        report: 'min'
+      },
+      target: {
+        files: {
+          'style/index.min.css': ['style/index.uncss']
         }
       }
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-concat');
-  grunt.loadNpmTasks('grunt-uncss')
+  grunt.loadNpmTasks('grunt-uncss');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
 
-  grunt.registerTask('compilecss', ['concat', 'uncss']);
+  grunt.registerTask('compilecss', ['concat', 'uncss', 'cssmin']);
 }
