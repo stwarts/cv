@@ -4,22 +4,24 @@ html
     meta[http-equiv="Content-Type" content="text/html; charset=UTF-8"]
     meta name="viewport" content="width=device-width, initial-scale=0.5"
 
-    title
-      | Stewart
+    title Stewart
+
+    /! build:css index.min.css
     link[rel="stylesheet" media="all" href="./style/application.css"]
     link[rel="stylesheet" media="all" href="./style/compiled_tailwind.css"]
-    link[rel="stylesheet" media="all" href="./style/download_button.css"]
+    /! /build
+
     link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700&display=swap" rel="stylesheet"
     link href="https://fonts.googleapis.com/css?family=Assistant:400,700&display=swap" rel="stylesheet"
     link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'
 
   body class="mx-auto my-auto lg:my-10 md:my-5"
     .a4-size.relative.text-blue-800.mx-auto style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"
-      .widget.download-widget
-        a.btn[href="https://github.com/stwart-nguyen/cv/raw/master/resource/Stewart_Nguyen.pdf" target="_top"]
-          span Download as
-          i class='fa fa-file-pdf-o ml-1 text-blue-800' style='font-size: 14px'
-
+      .download-widget
+        a[href="https://github.com/stwart-nguyen/cv/raw/master/resource/Stewart_Nguyen.pdf" target="_top"]
+          .bg-transparent.px-1.border.border-blue-800.rounded
+            span Download as
+            i class='fa fa-file-pdf-o ml-1 text-blue-800' style='font-size: 14px'
       / Background
       .flex.h-full.w-full.absolute style='z-index: -1;'
         .bg-gray-300 class='w-1/3'
@@ -55,4 +57,3 @@ html
               == Slim::Template.new('./partials/experience.html.slim').render
             .mb-6
               == Slim::Template.new('./partials/projects.html.slim').render
-           
