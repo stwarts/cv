@@ -12,7 +12,7 @@ module.exports = function (grunt) {
     uncss: {
       dist: {
         files: {
-          'style/index.uncss': 'index.html'
+          'index.css': 'index.html'
         }
       }
     },
@@ -22,7 +22,14 @@ module.exports = function (grunt) {
       },
       target: {
         files: {
-          'style/index.min.css': ['style/index.uncss']
+          'index.min.css': ['index.css']
+        }
+      }
+    },
+    processhtml: {
+      dist: {
+        files: {
+          'index.html': ['index.html']
         }
       }
     }
@@ -31,6 +38,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-uncss');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.loadNpmTasks('grunt-processhtml')
 
-  grunt.registerTask('compilecss', ['concat', 'uncss', 'cssmin']);
+  grunt.registerTask('compilecss', ['concat', 'uncss', 'cssmin', 'processhtml']);
 }
