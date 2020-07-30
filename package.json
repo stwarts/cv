@@ -3,6 +3,7 @@
     "tailwindcss": "^1.2.0"
   },
   "devDependencies": {
-    "grunt": "^1.2.1"
+    "grunt": "^1.2.1",
+    "grunt-contrib-concat": "^1.0.1"
   }
 }
