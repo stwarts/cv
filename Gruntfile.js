@@ -27,6 +27,9 @@ module.exports = function (grunt) {
       }
     },
     processhtml: {
+      options: {
+        customBlockTypes: ['amp-css.js']
+      },
       dist: {
         files: {
           'index.html': ['converted_index.html']
