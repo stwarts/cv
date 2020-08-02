@@ -38,7 +38,22 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-uncss');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
-  grunt.loadNpmTasks('grunt-processhtml')
+  grunt.loadNpmTasks('grunt-processhtml');
 
   grunt.registerTask('compilecss', ['concat', 'uncss', 'cssmin', 'processhtml']);
+
+  grunt.registerTask('convertslim', 'Convert slim to html', function () {
+    let options = {
+      cmd: 'slimrb',
+      args: [
+        'index.html.slim',
+        'index.html',
+        '--pretty'
+      ]
+    };
+
+    grunt.util.spawn(options, function(error, result, code) {
+      if (code !== 0) { grunt.warn(error, code); }
+    });
+  });
 }
