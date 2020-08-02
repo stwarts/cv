@@ -1,197 +1,612 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
-    <meta content="width=device-width, initial-scale=0.5" name="viewport" />
-    <title>Stewart</title><!--build:css:dist index.min.css-->
-    <link href="./style/application.css" media="all" rel="stylesheet" />
-    <link href="./style/compiled_tailwind.css" media="all" rel="stylesheet" />
-    <!--/build-->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700&amp;display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Assistant:400,700&amp;display=swap" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
-  </head>
-  <body class="mx-auto my-auto lg:my-10 md:my-5">
-    <div class="a4-size relative text-blue-800 mx-auto" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">      <div class="flex h-full w-full absolute" style="z-index: -1;">
-        <div class="bg-gray-300 w-1/3"></div>        <div></div>
-        <!--build:remove:dist-->
-        <div class="bg-gray-100 w-2/3"></div>
-        <!--/build-->
+<html amp>
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, minimum-scale=1, initial-scale=0.5" name="viewport" />
+  <meta content="This is Stewart&#39;s résume" name="description" />
+  <link as="script" href="https://cdn.ampproject.org/v0.js" rel="preload" />
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <style amp-boilerplate>
+    body {
+      -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      animation: -amp-start 8s steps(1, end) 0s 1 normal both
+    }
+
+    @-webkit-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @-moz-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @-ms-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @-o-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+  </style><noscript>
+    <style amp-boilerplate>
+      body {
+        -webkit-animation: none;
+        -moz-animation: none;
+        -ms-animation: none;
+        animation: none
+      }
+    </style>
+  </noscript>
+  <link href="https://stwart-nguyen.github.io/cv" rel="canonical" />
+  <title>Stewart</title>
+  <meta />
+  <style amp-custom>
+    body {
+      font-family: Assistant, sans-serif
+    }
+
+    .a4-size {
+      height: 1122.8855685456px;
+      width: 794px
+    }
+
+    .download-widget {
+      position: fixed;
+      z-index: 100;
+      top: 0;
+      right: 0
+    }
+
+    /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+    html {
+      line-height: 1.15;
+      -webkit-text-size-adjust: 100%
+    }
+
+    body {
+      margin: 0
+    }
+
+    a {
+      background-color: transparent
+    }
+
+    b {
+      font-weight: bolder
+    }
+
+    img {
+      border-style: none
+    }
+
+    ::-webkit-file-upload-button {
+      -webkit-appearance: button;
+      font: inherit
+    }
+
+    p {
+      margin: 0
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0
+    }
+
+    html {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      line-height: 1.5
+    }
+
+    *,
+    ::after,
+    ::before {
+      box-sizing: border-box;
+      border-width: 0;
+      border-style: solid;
+      border-color: #e2e8f0
+    }
+
+    img {
+      border-style: solid
+    }
+
+    a {
+      color: inherit;
+      text-decoration: inherit
+    }
+
+    img {
+      display: block;
+      vertical-align: middle
+    }
+
+    img {
+      max-width: 100%;
+      height: auto
+    }
+
+    .bg-transparent {
+      background-color: transparent
+    }
+
+    .bg-gray-100 {
+      background-color: #f7fafc
+    }
+
+    .bg-gray-200 {
+      background-color: #edf2f7
+    }
+
+    .bg-gray-300 {
+      background-color: #e2e8f0
+    }
+
+    .bg-blue-800 {
+      background-color: #2c5282
+    }
+
+    .border-gray-100 {
+      border-color: #f7fafc
+    }
+
+    .border-blue-800 {
+      border-color: #2c5282
+    }
+
+    .border-vivid-yellow-500 {
+      border-color: #ffc70b
+    }
+
+    .rounded {
+      border-radius: .25rem
+    }
+
+    .rounded-full {
+      border-radius: 9999px
+    }
+
+    .border {
+      border-width: 1px
+    }
+
+    .border-t-4 {
+      border-top-width: 4px
+    }
+
+    .border-l-4 {
+      border-left-width: 4px
+    }
+
+    .flex {
+      display: flex
+    }
+
+    .items-baseline {
+      align-items: baseline
+    }
+
+    .justify-between {
+      justify-content: space-between
+    }
+
+    .font-normal {
+      font-weight: 400
+    }
+
+    .font-bold {
+      font-weight: 700
+    }
+
+    .h-full {
+      height: 100%
+    }
+
+    .my-auto {
+      margin-top: auto;
+      margin-bottom: auto
+    }
+
+    .mx-auto {
+      margin-left: auto;
+      margin-right: auto
+    }
+
+    .mb-1 {
+      margin-bottom: .25rem
+    }
+
+    .ml-1 {
+      margin-left: .25rem
+    }
+
+    .mb-4 {
+      margin-bottom: 1rem
+    }
+
+    .mb-6 {
+      margin-bottom: 1.5rem
+    }
+
+    .mt-8 {
+      margin-top: 2rem
+    }
+
+    .opacity-85 {
+      opacity: .85
+    }
+
+    .p-0 {
+      padding: 0
+    }
+
+    .py-1 {
+      padding-top: .25rem;
+      padding-bottom: .25rem
+    }
+
+    .px-1 {
+      padding-left: .25rem;
+      padding-right: .25rem
+    }
+
+    .py-8 {
+      padding-top: 2rem;
+      padding-bottom: 2rem
+    }
+
+    .px-8 {
+      padding-left: 2rem;
+      padding-right: 2rem
+    }
+
+    .pl-2 {
+      padding-left: .5rem
+    }
+
+    .absolute {
+      position: absolute
+    }
+
+    .relative {
+      position: relative
+    }
+
+    .text-center {
+      text-align: center
+    }
+
+    .text-right {
+      text-align: right
+    }
+
+    .text-white {
+      color: #fff
+    }
+
+    .text-blue-800 {
+      color: #2c5282
+    }
+
+    .text-sm {
+      font-size: .875rem
+    }
+
+    .text-lg {
+      font-size: 1.125rem
+    }
+
+    .text-5xl {
+      font-size: 3rem
+    }
+
+    .uppercase {
+      text-transform: uppercase
+    }
+
+    .tracking-x2widest {
+      letter-spacing: .2em
+    }
+
+    .w-1\/3 {
+      width: 33.333333%
+    }
+
+    .w-2\/3 {
+      width: 66.666667%
+    }
+
+    .w-full {
+      width: 100%
+    }
+
+    .z-10 {
+      z-index: 10
+    }
+
+    .title {
+      font-family: 'Open Sans Condensed', sans-serif;
+      text-transform: uppercase;
+      color: #2c5282;
+      font-weight: 700;
+      letter-spacing: .05em;
+      font-size: 1.125rem
+    }
+
+    @media (min-width:768px) {
+      .md\:my-5 {
+        margin-top: 1.25rem;
+        margin-bottom: 1.25rem
+      }
+    }
+
+    @media (min-width:1024px) {
+      .lg\:my-10 {
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem
+      }
+    }
+
+    @font-face {
+      font-family: 'Open Sans Condensed';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: local('Open Sans Condensed Bold'), local('OpenSansCondensed-Bold'), url(https://fonts.gstatic.com/s/opensanscondensed/v14/z7NFdQDnbTkabZAIOl9il_O6KJj73e7Ff0GmDuXMQg.ttf) format('truetype')
+    }
+
+    @font-face {
+      font-family: Assistant;
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: local('Assistant'), local('Assistant-Regular'), url(https://fonts.gstatic.com/s/assistant/v4/2sDcZGJYnIjSi6H75xkzaGW8.ttf) format('truetype')
+    }
+
+    @font-face {
+      font-family: Assistant;
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: local('Assistant Bold'), local('Assistant-Bold'), url(https://fonts.gstatic.com/s/assistant/v4/2sDZZGJYnIjSi6H75xk700CsBJ0d.ttf) format('truetype')
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700&amp;display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Assistant:400,700&amp;display=swap" rel="stylesheet" />
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+</head>
+
+<body class="mx-auto my-auto lg:my-10 md:my-5">
+  <div class="a4-size relative text-blue-800 mx-auto"
+    style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">    <div class="flex h-full w-full absolute" style="z-index: -1;">
+      <div class="bg-gray-300 w-1/3"></div>      <div></div>
+    </div>
+    <div class="bg-gray-200 py-8 text-center relative" style="box-shadow: 0px -2px 6px -3px rgba(0, 0, 0, 0.2) inset;">
+      <div class="text-5xl uppercase tracking-x2widest" style="font-family: &#39;Open Sans Condensed&#39;, sans-serif;">
+        Stewart Nguyen
       </div>
-      <div class="bg-gray-200 py-8 text-center relative" style="box-shadow: 0px -2px 6px -3px rgba(0, 0, 0, 0.2) inset;">
-        <div class="text-5xl uppercase tracking-x2widest" style="font-family: &#39;Open Sans Condensed&#39;, sans-serif;">
-          Stewart Nguyen
-        </div>
-        <div class="text-lg uppercase tracking-x2widest bg-blue-800 text-white py-1 mx-auto" style="width: 500px;">
-          Ruby on Rails developer
-        </div>
+      <div class="text-lg uppercase tracking-x2widest bg-blue-800 text-white py-1 mx-auto" style="width: 500px;">
+        Ruby on Rails developer
       </div>
-      <div class="flex absolute mt-8 z-10">
-        <div class="p-0 w-1/3">
-          <div class="text-right d-flex flex-column align-items-center px-8">
-            <div>
-              <div class="mb-6">
-                <img class="rounded-full" src="./resource/avatar.png" />
+    </div>
+    <div class="flex absolute mt-8 z-10">
+      <div class="p-0 w-1/3">
+        <div class="text-right d-flex flex-column align-items-center px-8">
+          <div>
+            <div class="mb-6">
+              <amp-img class="rounded-full" height="200px" src="./resource/avatar.png" width="200px"></amp-img>
+            </div>
+            <div class="mb-6">
+              <div>
+                <div class="title">
+                  About me
+                </div>
+                <p class="opacity-85">
+                  2+ years working in an outsourcing&nbsp;environment<br />Approach problems with<br />a rational and
+                  decisive mindset. Flexible and versatile&nbsp;under new situations
+                </p>
               </div>
-              <div class="mb-6">
-                <div>
-                  <div class="title">
-                    About me
-                  </div>
-                  <p class="opacity-85">
-                    2+ years working in an outsourcing&nbsp;environment<br />Approach problems with<br />a rational and decisive mindset. Flexible and versatile&nbsp;under new situations
+            </div>
+            <div class="mb-6">
+              <div>
+                <div class="title">
+                  CONTACT
+                </div>
+                <div class="opacity-85">
+                  <p>
+                    +84 934 00 1024
+                  </p>
+                  <p>
+                    npcuong.011308@gmail.com
                   </p>
                 </div>
               </div>
-              <div class="mb-6">
-                <div>
-                  <div class="title">
-                    CONTACT
-                  </div>
-                  <div class="opacity-85">
-                    <p>
-                      +84 934 00 1024
-                    </p>
-                    <p>
-                      npcuong.011308@gmail.com
-                    </p>
-                  </div>
+            </div>
+            <div class="mb-6">
+              <div>
+                <div class="title">
+                  EDUCATION
+                </div>
+                <div class="opacity-85">
+                  <p>
+                    <b>University of Science</b>
+                  </p>
+                  <p>
+                    Information Technology
+                  </p>
                 </div>
               </div>
+            </div>
+            <div class="mb-6">
               <div class="mb-6">
-                <div>
-                  <div class="title">
-                    EDUCATION
-                  </div>
-                  <div class="opacity-85">
-                    <p>
-                      <b>University of Science</b>
-                    </p>
-                    <p>
-                      Information Technology
-                    </p>
-                  </div>
+                <div class="title">
+                  Certifications
+                </div>
+                <div class="opacity-85">
+                  TOIEC 800+
                 </div>
               </div>
-              <div class="mb-6">
-                <div class="mb-6">
-                  <div class="title">
-                    Certifications
-                  </div>
-                  <div class="opacity-85">
-                    TOIEC 800+
-                  </div>
+              <div>
+                <div class="title">
+                  SKILLS
                 </div>
-                <div>
-                  <div class="title">
-                    SKILLS
-                  </div>
-                  <div class="opacity-85">
-                    Rails, postgreSQL, git,<br />self-motivated, logical thinking
-                  </div>
+                <div class="opacity-85">
+                  Rails, postgreSQL, git,<br />self-motivated, logical thinking
                 </div>
               </div>
-              <div class="mb-6">
-                <div>
-                  <a href="https://www.linkedin.com/in/stwart-nguyen/" target="_blank"><i class="fa fa-linkedin ml-1 text-blue-800" style="font-size: 1.5rem"></i></a><a href="https://github.com/stwart-nguyen/" target="_blank"><i class="fa fa-github ml-1 text-blue-800" style="font-size: 1.5rem"></i></a><a href="mailto:npcuong.011308@gmail.com"><i class="fa fa-envelope ml-1 text-blue-800" style="font-size: 1.25rem"></i></a>
-                </div>
+            </div>
+            <div class="mb-6">
+              <div>
+                <a href="https://www.linkedin.com/in/stwart-nguyen/" target="_blank"><i
+                    class="fa fa-linkedin ml-1 text-blue-800" style="font-size: 1.5rem"></i></a><a
+                  href="https://github.com/stwart-nguyen/" target="_blank"><i class="fa fa-github ml-1 text-blue-800"
+                    style="font-size: 1.5rem"></i></a><a href="mailto:npcuong.011308@gmail.com"><i
+                    class="fa fa-envelope ml-1 text-blue-800" style="font-size: 1.25rem"></i></a>
               </div>
             </div>
           </div>
         </div>
-        <div class="p-0 w-2/3">
-          <div class="px-8">
-            <div class="mb-6">
+      </div>
+      <div class="p-0 w-2/3">
+        <div class="px-8">
+          <div class="mb-6">
+            <div>
+              <div class="title">
+                Experience
+              </div>
               <div>
-                <div class="title">
-                  Experience
+                <div class="flex justify-between items-baseline">
+                  <a class="text-blue-800 font-bold opacity-85" href="http://www.goldenowl.asia/" target="_blank">Golden
+                    Owl Consulting</a><i class="text-sm opacity-85 font-normal">Mar 2018 - Present&nbsp;</i>
                 </div>
+                <div class="opacity-85">
+                  <ul class="border-l-4 pl-2 border-vivid-yellow-500 relative">
+                    <div class="border-t-4 border-gray-100 absolute w-full" style="left: -4px"></div>
+                    <div class="border-t-4 border-gray-100 absolute w-full" style="left: -4px; bottom: -1px"></div>
+                    <li class="mb-1">
+                      &mdash; Analyze client's requirements thoroughly before development in association with project
+                      assistants
+                    </li>
+                    <li class="mb-1">
+                      &mdash; Examine and make a comparision among posibility solutions
+                    </li>
+                    <li class="mb-1">
+                      &mdash; Commit readable and scalable source code
+                    </li>
+                    <li class="mb-1">
+                      &mdash; Maintain high test coverage with sufficient test cases
+                    </li>
+                    <li class="mb-1">
+                      &mdash; Responsible for giving hands-on and theoretical training, and mentoring for newbies
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mb-6">
+            <div>
+              <div class="title">
+                Projects
+              </div>
+              <div class="mb-4">
                 <div>
                   <div class="flex justify-between items-baseline">
-                    <a class="text-blue-800 font-bold opacity-85" href="http://www.goldenowl.asia/" target="_blank">Golden Owl Consulting</a><i class="text-sm opacity-85 font-normal">Mar 2018 - Present&nbsp;</i>
+                    <div class="text-blue-800 font-bold opacity-85">
+                      Influencer marketing platform from Sweden
+                    </div>
+                    <i class="text-sm opacity-85 font-normal">Feb 2020 - Present</i>
                   </div>
+                  <i class="text-sm opacity-85 font-normal">a self-service global influencer marketing</i>
                   <div class="opacity-85">
                     <ul class="border-l-4 pl-2 border-vivid-yellow-500 relative">
-                      <div class="border-t-4 border-gray-100 absolute w-full" style="left: -4px"></div><div class="border-t-4 border-gray-100 absolute w-full" style="left: -4px; bottom: -1px"></div>
-                      <li class="mb-1">
-                        &mdash; Analyze client's requirements thoroughly before development in association with project assistants
+                      <div class="border-t-4 border-gray-100 absolute w-full" style="left: -4px"></div>
+                      <div class="border-t-4 border-gray-100 absolute w-full" style="left: -4px; bottom: -1px"></div>
+                      <li class="bb-1">
+                        &mdash; Cooperate closely with 2 other members and project coordinator to ensure final outcomes
                       </li>
                       <li class="mb-1">
-                        &mdash; Examine and make a comparision among posibility solutions
+                        &mdash; Develope new features to admin dashboard
                       </li>
                       <li class="mb-1">
-                        &mdash; Commit readable and scalable source code
+                        &mdash; Intergrate Facebook Graph API for automation business workflow
                       </li>
                       <li class="mb-1">
-                        &mdash; Maintain high test coverage with sufficient test cases
-                      </li>
-                      <li class="mb-1">
-                        &mdash; Responsible for giving hands-on and theoretical training, and mentoring for newbies
+                        &mdash; Have been studying GrahpQL, ReactJS to share workload with the front-end developer
                       </li>
                     </ul>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="mb-6">
               <div>
-                <div class="title">
-                  Projects
-                </div>
-                <div class="mb-4">
-                  <div>
-                    <div class="flex justify-between items-baseline">
-                      <div class="text-blue-800 font-bold opacity-85">
-                        Influencer marketing platform from Sweden
-                      </div>
-                      <i class="text-sm opacity-85 font-normal">Feb 2020 - Present</i>
-                    </div>
-                    <i class="text-sm opacity-85 font-normal">a self-service global influencer marketing</i>
-                    <div class="opacity-85">
-                      <ul class="border-l-4 pl-2 border-vivid-yellow-500 relative">
-                        <div class="border-t-4 border-gray-100 absolute w-full" style="left: -4px"></div><div class="border-t-4 border-gray-100 absolute w-full" style="left: -4px; bottom: -1px"></div>
-                        <li class="bb-1">
-                          &mdash; Cooperate closely with 2 other members and project coordinator to ensure final outcomes
-                        </li>
-                        <li class="mb-1">
-                          &mdash; Develope new features to admin dashboard
-                        </li>
-                        <li class="mb-1">
-                          &mdash; Intergrate Facebook Graph API for automation business workflow
-                        </li>
-                        <li class="mb-1">
-                          &mdash; Have been studying GrahpQL, ReactJS to share workload with the front-end developer
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
                 <div>
-                  <div>
-                    <div class="flex justify-between items-baseline">
-                      <div class="text-blue-800 font-bold opacity-85">
-                        Event agency from Malaysia
-                      </div>
-                      <i class="text-sm opacity-85 font-normal">Aug 2018 - Jan 2020</i>
+                  <div class="flex justify-between items-baseline">
+                    <div class="text-blue-800 font-bold opacity-85">
+                      Event agency from Malaysia
                     </div>
-                    <i class="text-sm opacity-85 font-normal">a platform to help people to get into running with exciting challenges</i>
-                    <div class="opacity-85">
-                      <ul class="border-l-4 pl-2 border-vivid-yellow-500 relative">
-                        <div class="border-t-4 border-gray-100 absolute w-full" style="left: -4px"></div><div class="border-t-4 border-gray-100 absolute w-full" style="left: -4px; bottom: -1px"></div>
-                        <li class="mb-1">
-                          &mdash; Communicated directly with client to clarify business objective and brainstormed optimal ideas
-                        </li>
-                        <li class="mb-1">
-                          &mdash; Improved poor API's and dashboard's performance&nbsp;by inspecting though legacy source code and log files
-                        </li>
-                        <li class="mb-1">
-                          &mdash; Performed Stress test using gem ruby-jmeter to determine bottleneck, system errors&nbsp;when platform reached its threshold
-                        </li>
-                        <li class="mb-1">
-                          &mdash; Integrated payment gateway and other 3rd-parties to enhance user experience, attracted 10k+ new customers
-                        </li>
-                      </ul>
-                    </div>
+                    <i class="text-sm opacity-85 font-normal">Aug 2018 - Jan 2020</i>
+                  </div>
+                  <i class="text-sm opacity-85 font-normal">a platform to help people to get into running with exciting
+                    challenges</i>
+                  <div class="opacity-85">
+                    <ul class="border-l-4 pl-2 border-vivid-yellow-500 relative">
+                      <div class="border-t-4 border-gray-100 absolute w-full" style="left: -4px"></div>
+                      <div class="border-t-4 border-gray-100 absolute w-full" style="left: -4px; bottom: -1px"></div>
+                      <li class="mb-1">
+                        &mdash; Communicated directly with client to clarify business objective and brainstormed optimal
+                        ideas
+                      </li>
+                      <li class="mb-1">
+                        &mdash; Improved poor API's and dashboard's performance&nbsp;by inspecting though legacy source
+                        code and log files
+                      </li>
+                      <li class="mb-1">
+                        &mdash; Performed Stress test using gem ruby-jmeter to determine bottleneck, system
+                        errors&nbsp;when platform reached its threshold
+                      </li>
+                      <li class="mb-1">
+                        &mdash; Integrated payment gateway and other 3rd-parties to enhance user experience, attracted
+                        10k+ new customers
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -200,5 +615,7 @@
         </div>
       </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
