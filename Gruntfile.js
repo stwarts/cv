@@ -6,13 +6,16 @@ module.exports = function (grunt) {
       },
       dist: {
         src: ['style/*.css'],
-        dest: 'style/index.css',
+        dest: 'index.css',
       },
     },
     uncss: {
+      options: {
+        ignoreSheets: [/font-awesome/]
+      },
       dist: {
         files: {
-          'index.css': 'index.html'
+          'index.css': 'converted_index.html'
         }
       }
     },
