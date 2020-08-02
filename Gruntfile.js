@@ -29,12 +29,12 @@ module.exports = function (grunt) {
     processhtml: {
       dist: {
         files: {
-          'index.html': ['index.html']
+          'index.html': ['converted_index.html']
         }
       },
       pdf: {
         files: {
-          'pdf_index.html': ['index.html']
+          'pdf_index.html': ['converted_index.html']
         }
       }
     }
@@ -45,19 +45,17 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-processhtml');
 
-  grunt.registerTask('compilecss', ['concat', 'uncss', 'cssmin', 'processhtml:dist']);
-
   grunt.registerTask('convertslim', 'Convert slim to html', function () {
     let options = {
       cmd: 'slimrb',
       args: [
         'index.html.slim',
-        'index.html',
+        'converted_index.html',
         '--pretty'
       ]
     };
 
-    grunt.util.spawn(options, function(error, result, code) {
+    grunt.util.spawn(options, function (error, result, code) {
       if (code !== 0) { grunt.warn(error, code); }
     });
   });
@@ -79,4 +77,8 @@ module.exports = function (grunt) {
       if (code !== 0) { grunt.warn(error, code); }
     });
   });
+
+  grunt.registerTask('compilecss', ['concat', 'uncss', 'cssmin']);
+  grunt.registerTask('compilehtml', ['convertslim', 'processhtml']);
+  grunt.registerTask('deploy', ['compilecss', 'compilehtml', 'generatepdf'])
 }

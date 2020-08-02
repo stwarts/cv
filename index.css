@@ -12,10 +12,6 @@ body {
   top: 0;
   right: 0; }
 
-.download-widget a {
-  height: 24px;
-  line-height: 18px; }
-
 /*# sourceMappingURL=application.css.map */
  
 /*** uncss> filename: style/compiled_tailwind.css ***/
@@ -359,6 +355,10 @@ img {
   height: auto;
 }
 
+.bg-transparent {
+  background-color: transparent;
+}
+
 .bg-gray-100 {
   background-color: #f7fafc;
 }
@@ -379,12 +379,24 @@ img {
   border-color: #f7fafc;
 }
 
+.border-blue-800 {
+  border-color: #2c5282;
+}
+
 .border-vivid-yellow-500 {
   border-color: #FFC70B;
 }
 
+.rounded {
+  border-radius: 0.25rem;
+}
+
 .rounded-full {
   border-radius: 9999px;
+}
+
+.border {
+  border-width: 1px;
 }
 
 .border-t-4 {
@@ -460,6 +472,11 @@ img {
 .py-1 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
+}
+
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
 }
 
 .py-8 {
