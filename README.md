@@ -1,5 +1,3 @@
-This repository is for the purpose of building a résume in combination of multiple libraries on my own
-
 Have a look at: https://stwart-nguyen.github.io/cv  :)
 
 ## Libraries in used
