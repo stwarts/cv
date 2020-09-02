@@ -15,11 +15,16 @@ div
       / Comunications is a key
       li.bb-1 &mdash; Cooperate closely with 2 other members and project coordinator to ensure final outcomes
       / Which features?
+      / hashtag search, use full text search against a large table (2.7M records in local, over 5M records on staging and production)
+      / Use the naive Rails batch (in_batches) took 70 minutes on local for migration, indexing
+      / => Study and research why it slow and then use raw SQL appoarch => reduce to 7-8 minutes
+      / Full text search, stop words, index ordering, CTE recursive, VACUUM, ::tsvector, caching tsvector column, backslash escape problems
+      / Inspect the query to make sure it uses index all the time
       / => Typical features to serve business (user, admin things)
       / The challenge here is client rarely verifies business logic 
       /   after it's delivered to staging server, so the whole team need to make it really clear to each other
       /   so that errors occur as few as possible, and once it happens, everybody knows the cause immediately
-      li.mb-1 &mdash; Develope new features to admin dashboard
+      li.mb-1 &mdash; Research workflow to reduce features management, deployment effort
       / Any obstacles? Experiences on Facebook Review?
       / This is the challenging one, had to read carefully through bunch of API docs
       /   write unit test (vcr), developed modules with specialized functions (rate limit check, error handler, caching)
