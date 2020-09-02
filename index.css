@@ -575,12 +575,12 @@ a {
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local('Assistant'), local('Assistant-Regular'), url(https://fonts.gstatic.com/s/assistant/v4/2sDcZGJYnIjSi6H75xkzaGW8.ttf) format('truetype');
+  src: local('Assistant'), local('Assistant-Regular'), url(https://fonts.gstatic.com/s/assistant/v5/2sDcZGJYnIjSi6H75xkzaGW8.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Assistant';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: local('Assistant Bold'), local('Assistant-Bold'), url(https://fonts.gstatic.com/s/assistant/v4/2sDZZGJYnIjSi6H75xk700CsBJ0d.ttf) format('truetype');
+  src: local('Assistant Bold'), local('Assistant-Bold'), url(https://fonts.gstatic.com/s/assistant/v5/2sDZZGJYnIjSi6H75xk700CsBJ0d.ttf) format('truetype');
 }
