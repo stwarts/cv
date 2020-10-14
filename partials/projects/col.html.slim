@@ -10,10 +10,6 @@ div
     ul.border-l-4.pl-2.border-vivid-yellow-500.relative
       == Slim::Template.new('partials/utils/abs_trans_top_border.html.slim').render
       == Slim::Template.new('partials/utils/abs_trans_bottom_border.html.slim').render
-      / How? Do you frequently miss deadline?
-      / Totally different from the previous project, was only me and 1 project coordinator
-      / Comunications is a key
-      li.bb-1 &mdash; Cooperate closely with 2 other members and project coordinator to ensure final outcomes
       / Which features?
       / hashtag search, use full text search against a large table (2.7M records in local, over 5M records on staging and production)
       / Use the naive Rails batch (in_batches) took 70 minutes on local for migration, indexing
@@ -24,9 +20,13 @@ div
       / The challenge here is client rarely verifies business logic 
       /   after it's delivered to staging server, so the whole team need to make it really clear to each other
       /   so that errors occur as few as possible, and once it happens, everybody knows the cause immediately
-      li.mb-1 &mdash; Research workflow to reduce features management, deployment effort
+      li.mb-1 &mdash; Develop features, perform migration against million-record tables (hashtag search, global search)
+      / How? Do you frequently miss deadline?
+      / Totally different from the previous project, was only me and 1 project coordinator
+      / Comunications is a key
+      li.mb-1 &mdash; Take full responsibility as a project leader, make decision for workflow (with PA), library used, database design, etc, to ensure final outcomes
+      li.mb-1 &mdash; Have been studying GraphQL, ReactJS to share workload with the front-end developer
       / Any obstacles? Experiences on Facebook Review?
       / This is the challenging one, had to read carefully through bunch of API docs
       /   write unit test (vcr), developed modules with specialized functions (rate limit check, error handler, caching)
-      li.mb-1 &mdash; Integrate Facebook Graph API for automation business workflow
-      li.mb-1 &mdash; Have been studying GraphQL, ReactJS to share workload with the front-end developer
+      li.mb-1 &mdash; Integrate Facebook Graph API for automation business flow
