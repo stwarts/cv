@@ -15,23 +15,20 @@ Have a look at: https://stwart-nguyen.github.io/cv  :)
 
     + chromehtml2pdf: convert to PDF format
 
+    + grunt and grunt extensions: *concat*, *uncss*, *cssmin*, and *processhtml*
+
 ## Usage
-1. Compiling
+1. Compiling css
 
-    + html
-      ```
-      slimrb <in_path.html.slim> <out_path.html> [--pretty]
+    `grunt compilecss`
 
-      # To render a specific partial in a slim file
-      == Slim::Template.new(<partial.html.slim>).render
-      ```
-    + css
-    `sass <input> <output>`
+2. Compiling html
 
-    + tailwindcss
-    `npx tailwindcss build <input> -o <output>`
+    `grunt compilehtml`
 
 2. Converting PDF format
     + Install: `npm i chromehtml2pdf`
 
-    + `chromehtml2pdf --out=<filename>.pdf --format=A4 --printBackground=true file:///path/to/input/file.html`
+    + `grunt generatepdf`
+
+    + or with custom params `chromehtml2pdf --out=<filename>.pdf --format=A4 --printBackground=true file:///path/to/input/file.html`
