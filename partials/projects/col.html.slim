@@ -3,13 +3,14 @@ div
     .text-blue-800.font-bold.opacity-85
       | Influencer marketing platform from Sweden
     i.text-sm.opacity-85.font-normal
-      | Feb 2020 - Present
+      | Feb 2020 - Dec 2020
   i.text-sm.opacity-85.font-normal a self-service global influencer marketing
 
   .opacity-85
     ul.border-l-4.pl-2.border-vivid-yellow-500.relative
       == Slim::Template.new('partials/utils/abs_trans_top_border.html.slim').render
       == Slim::Template.new('partials/utils/abs_trans_bottom_border.html.slim').render
+      li.mb-1 &mdash; Stack includes RoR, React, PostgreSQL, Neo4j, MySQL
       / Which features?
       / hashtag search, use full text search against a large table (2.7M records in local, over 5M records on staging and production)
       / Use the naive Rails batch (in_batches) took 70 minutes on local for migration, indexing
@@ -17,16 +18,13 @@ div
       / Full text search, stop words, index ordering, CTE recursive, VACUUM, ::tsvector, caching tsvector column, backslash escape problems
       / Inspect the query to make sure it uses index all the time
       / => Typical features to serve business (user, admin things)
-      / The challenge here is client rarely verifies business logic 
+      / The challenge here is client rarely verifies business logic
       /   after it's delivered to staging server, so the whole team need to make it really clear to each other
       /   so that errors occur as few as possible, and once it happens, everybody knows the cause immediately
-      li.mb-1 &mdash; Develop features, perform migration against million-record tables (hashtag search, global search)
-      / How? Do you frequently miss deadline?
-      / Totally different from the previous project, was only me and 1 project coordinator
-      / Comunications is a key
-      li.mb-1 &mdash; Take full responsibility as a project leader, make decision for workflow (with PA), library used, database design, etc, to ensure final outcomes
-      li.mb-1 &mdash; Have been studying GraphQL, ReactJS to share workload with the front-end developer
-      / Any obstacles? Experiences on Facebook Review?
-      / This is the challenging one, had to read carefully through bunch of API docs
-      /   write unit test (vcr), developed modules with specialized functions (rate limit check, error handler, caching)
-      li.mb-1 &mdash; Integrate Facebook Graph API for automation business flow
+      li.mb-1 &mdash; Developed features against million-record tables such as global searching, data migration
+
+      / Upgraded create-react-script from v0.8 to v1.1
+      / Reduced execution of rspec by halfed by profiling with `test-prof`and rewrite using build_stubbed and vcr gem for external API call
+      / Circle CI test job is now took 2m30s compare to 6m before
+      li.mb-1 &mdash; Reduced unit test elapsed time by half, reduced front-end re-rendering on saving code from 10s to 3s
+      li.mb-1 &mdash; Studied new tech GraphQL, ReactJS to share workload with front-end developers

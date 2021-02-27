@@ -6,6 +6,8 @@ doctype html
 
     meta name="description" content="This is Stewart's résume"
     link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js"
+    - if ENV['PROJECT_ENV'] != 'prodution' 
+      <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 
     <script async src="https://cdn.ampproject.org/v0.js"></script>
     / Import other AMP Extensions here -->
@@ -50,11 +52,7 @@ doctype html
 
         / Real content
         .bg-gray-200.py-8.text-center.relative style="box-shadow: 0px -2px 6px -3px rgba(0, 0, 0, 0.2) inset;"
-          /img.absolute.rounded-full.border-gray-300.border-2 src="./resource/avatar.jpg" width="130px" style="top: 50%; transform: translate(0,-50%);"
-          .text-5xl.uppercase.tracking-x2widest style="font-family: 'Open Sans Condensed', sans-serif;"
-            | Stewart Nguyen
-          .text-lg.uppercase.tracking-x2widest.bg-blue-800.text-white.py-1.mx-auto style='width: 500px;'
-            | Ruby on Rails developer
+          == Slim::Template.new('./partials/heading.html.slim').render
 
         .flex.absolute.mt-8.z-10
           .p-0 class='w-1/3'
