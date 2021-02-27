@@ -3,20 +3,25 @@ div
     | Experience
   div
     .flex.justify-between.items-baseline
-      a.text-blue-800.font-bold.opacity-85 [href="http://www.goldenowl.asia/" target="_blank"]
+      a.text-blue-800.font-bold [href="http://www.goldenowl.asia/" target="_blank"]
         | Golden Owl Consulting
       i.text-sm.opacity-85.font-normal
         | Mar 2018 - Present&nbsp;
+    .text-blue-800.font-bold.opacity-85
+      | Vice leader of Ruby team from 06/2020
+
     .opacity-85
       ul.border-l-4.pl-2.border-vivid-yellow-500.relative
         == Slim::Template.new('partials/utils/abs_trans_top_border.html.slim').render
         == Slim::Template.new('partials/utils/abs_trans_bottom_border.html.slim').render
         li.mb-1
-          | &mdash; Analyze client's requirements thoroughly before development in association with project assistants
+          / Demo how to code properly, refactoring, adding index for searching
+          | &mdash; Responsible for code reviewing, managing, mentoring, and training inferior teammates
+        / By comparing among libraries, solutions
+        / Which criteria to compare?
+        / => Pros and cons, customization, scalability, possibility, time taken, needed at that time
         li.mb-1
-          / Which criteria to compare?
-          / => Pros and cons, customization, scalability, possibility, time taken, needed at that time
-          | &mdash; Inspect and make a comparision among solutions then choose the most feasible
+          | &mdash; Analyze client's requirements thoroughly to consult, introduce appropriate solutions
         li.mb-1
           / They may ask how?
           / => Design pattern/design principles
@@ -24,12 +29,10 @@ div
           / => Strategy, Template, Decorator, Factory Method
           / => Query Object, Service Object
           / => SO(LID), DRY, YAGNI, Tell don't ask, etc
-          | &mdash; Commit readable, scalable source code, and apply design patterns, design principles when possible
+          | &mdash; Commit readable, scalable code with proper design principles and design patterns
         li.mb-1
-          / sufficient mean?
-          / => No more or less, less cases make it an unreliable feature
-          /   Thinking of all edge cases takes time
-          / Write code that easy to write unit test, less mocking
-          | &mdash; Maintain high test coverage with sufficient test cases
-        li.mb-1
-          | &mdash; Responsible for code reviewing, training, and mentoring for newbies
+          / How?
+          / Upgrade rails version, development code reload 10 times faster (30s to 3s)
+          / Upgrade react version, reduce code reload by 70% (10s to 3s)
+          / Improved test execution time by half
+          | &mdash; Eager to improve existing application, increase app performance and reduce development process
