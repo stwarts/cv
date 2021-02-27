@@ -6,7 +6,8 @@ doctype html
 
     meta name="description" content="This is Stewart's résume"
     link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js"
-    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+    - if ENV['PROJECT_ENV'] != 'prodution' 
+      <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 
     <script async src="https://cdn.ampproject.org/v0.js"></script>
     / Import other AMP Extensions here -->
@@ -44,9 +45,9 @@ doctype html
           /! build:remove:pdf
           .bg-gray-100 class='w-2/3' style="box-shadow: -2px 0px 6px -3px rgba(0, 0, 0, 0.2)"
           /! /build
-          /div
+          div
           /! build:remove:dist
-          /.bg-gray-100 class='w-2/3'
+          .bg-gray-100 class='w-2/3'
           /! /build
 
         / Real content
