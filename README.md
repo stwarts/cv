@@ -1,4 +1,4 @@
-Have a look at: https://stwart-nguyen.github.io/cv  :)
+Have a look at: https://stwarts.github.io/cv  :)
 
 ## Libraries in used
 1. Ruby gems
