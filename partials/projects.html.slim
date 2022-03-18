@@ -2,6 +2,8 @@ div
   .title
     | Projects
   div.mb-4
+    == Slim::Template.new('partials/projects/sak.html.slim').render
+  div.mb-4
     == Slim::Template.new('partials/projects/bii.html.slim').render
   div
     == Slim::Template.new('partials/projects/col.html.slim').render

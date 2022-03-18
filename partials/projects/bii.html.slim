@@ -2,9 +2,9 @@ div
   .flex.justify-between.items-baseline
     .text-blue-800.font-bold.opacity-85
       | Event agency from Malaysia
-  i.text-sm.opacity-85.font-normal a platform to help people to get into running with exciting challenges
+  / i.text-sm.opacity-85.font-normal a platform to help people to get into running with exciting challenges
   .opacity-85.font-normal
-    i.text-sm Aug 2018 - Jan 2020
+    i.text-sm Aug 2018 - Jan 2021
     ul.border-l-4.pl-2.border-vivid-yellow-500.relative
       == Slim::Template.new('partials/utils/abs_trans_top_border.html.slim').render
       == Slim::Template.new('partials/utils/abs_trans_bottom_border.html.slim').render
@@ -15,8 +15,7 @@ div
       / => Monitoring tools Skylight
       / Performance Testing => ruby-jmeter
       li.mb-1
-        |&mdash; Enhanced poor API's and dashboard's performance
-        |&nbsp;by inspecting code, log files, and performing stress testing
+        |&mdash; Improved frustrated app performance by monitoring and analyzing through source code and log files
       / Figured out the DB connection error for reaching maximum 25 connections
       /   which happended in 06/2018 (client confirmed)
       / Found out system could handle around 600 concurrent users per second
@@ -26,16 +25,10 @@ div
       /   requests per second (rps) on Skylight carefully through peak hours everyday
       / Which specifications for this test?
       / => ramp-time, loop, user count, etc.
-      li.mb-1 &mdash; Integrated payment gateway and 3rd-parties, attracted 10k+ new customers
-
-  .opacity-85.font-normal
-    i.text-sm Jan 2021 - Present
-    ul.border-l-4.pl-2.border-vivid-yellow-500.relative
-      == Slim::Template.new('partials/utils/abs_trans_top_border.html.slim').render
-      == Slim::Template.new('partials/utils/abs_trans_bottom_border.html.slim').render
+      li.mb-1 &mdash; Attracted 10k+ new customers by integrating payment gateway and 3rd-parties, 
       / tools: rack-mini-profiling, flamegraph, stackprof, derailed_benchmarks, bumbler
       / Detected loading routes.rb triggered by ActionDispatch::Callbacks.to_prepare was really slow (~8s)
-      li.mb-1 &mdash; Improved the bad development experience, code reload on development mode reduced from 30s to 4s
+      / li.mb-1 &mdash; Improved the bad development experience, code reload on development mode reduced from 30s to 4s
       / Added React to front-end
       / Used bootsnap and installed spring to boost up rails load time
-      li.mb-1 &mdash; Installed, set up new libraries and upgraded outdated libraries
+      / li.mb-1 &mdash; Installed, set up new libraries and upgraded outdated libraries

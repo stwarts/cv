@@ -1,0 +1,18 @@
+div
+  .flex.justify-between.items-baseline
+    .text-blue-800.font-bold.opacity-85
+      | An real estate platform
+    i.text-sm.opacity-85.font-normal
+      | April 2020 - Present&nbsp;
+  / i.text-sm.opacity-85.font-normal helps people to buy designs and build houses
+
+  .opacity-85
+    ul.border-l-4.pl-2.border-vivid-yellow-500.relative
+      == Slim::Template.new('partials/utils/abs_trans_top_border.html.slim').render
+      == Slim::Template.new('partials/utils/abs_trans_bottom_border.html.slim').render
+      li.mb-1 &mdash; Stack: Rails, postgreSQL, Angular, consul, LDAP
+      li.mb-1 &mdash; The whole platform is splitted into services. Each service is an Rails app. Angular is used for front-end.
+      / Because the whole system is large, fixing bug is non trivial, so as executing rspec
+      / Require complex set up and starting services, make sure all services are on the same branches
+      li.mb-1 &mdash; Prevent costly bug fixing by providing unit tests as much as possible
+      li.mb-1 &mdash; Boost up productivity by writing myself scripts to manage services
