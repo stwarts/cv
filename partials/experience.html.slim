@@ -1,14 +1,38 @@
 div
-  .title
+  .title.mb-2
     | Experience
+  div.mb-2
+    .flex.justify-between.items-baseline
+      a.text-blue-800.font-bold [href="http://www.goldenowl.asia/" target="_blank"]
+        | OIVAN
+      i.text-sm.opacity-85.font-normal
+        | April 2020 - Present&nbsp;
+    .text-blue-800.font-bold.opacity-85
+      | Software engineer
+
+    .opacity-85
+      ul.border-l-4.pl-2.border-vivid-yellow-500.relative
+        == Slim::Template.new('partials/utils/abs_trans_top_border.html.slim').render
+        == Slim::Template.new('partials/utils/abs_trans_bottom_border.html.slim').render
+        / Learned from OIVAN: coordination, communcation, workflow
+        / Hard: big project with around 4-5 teams, ~20 rails services, each feature deployment can have upto 8 involved services
+        / Always have code conflict, every single change in one service can causeside effect in other services
+        / => Carefullness, unit testing, communcation
+        li.mb-1
+          | &mdash; Coordinate with a 8-people Scrum team developing a large micro-services project
+        li.mb-1
+          | &mdash; Commit readable, scalable code with proper design principles and design patterns
+        li.mb-1
+          | &mdash; Follow the defined workflow precisely to reduce code conflict and prevent miscommunication
+
   div
     .flex.justify-between.items-baseline
       a.text-blue-800.font-bold [href="http://www.goldenowl.asia/" target="_blank"]
         | Golden Owl Consulting
       i.text-sm.opacity-85.font-normal
-        | Mar 2018 - Present&nbsp;
+        | Mar 2018 - Apr 2021&nbsp;
     .text-blue-800.font-bold.opacity-85
-      | Vice leader of Ruby team from June 2020
+      | Vice leader of Ruby team
 
     .opacity-85
       ul.border-l-4.pl-2.border-vivid-yellow-500.relative
@@ -17,12 +41,18 @@ div
         li.mb-1
           / Demo how to code properly, refactoring, adding index for searching
           | &mdash; Responsible for code reviewing, managing, mentoring, and training inferior teammates
+        li.mb-1
+          / How?
+          / Upgrade rails version, development code reload 10 times faster (30s to 3s)
+          / Upgrade react version, reduce code reload by 70% (10s to 3s)
+          / Improved test execution time by half
+          | &mdash; Refine clients's application, tune app performance and reduce development process
         / By comparing among libraries, solutions
         / Which criteria to compare?
         / => Pros and cons, customization, scalability, possibility, time taken, needed at that time
-        li.mb-1
+        /li.mb-1
           | &mdash; Analyze client's requirements thoroughly to consult and apply appropriate solutions
-        li.mb-1
+        /li.mb-1
           / They may ask how?
           / => Design pattern/design principles
           / => To be more specific?
@@ -30,9 +60,3 @@ div
           / => Query Object, Service Object
           / => SO(LID), DRY, YAGNI, Tell don't ask, etc
           | &mdash; Commit readable, scalable code with proper design principles and design patterns
-        li.mb-1
-          / How?
-          / Upgrade rails version, development code reload 10 times faster (30s to 3s)
-          / Upgrade react version, reduce code reload by 70% (10s to 3s)
-          / Improved test execution time by half
-          | &mdash; Refine clients's application, tune app performance and reduce development process
