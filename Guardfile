@@ -29,5 +29,5 @@ end
 #
 guard :shell do
   watch(/(.*).css$/) { |_m| `grunt compilecss` }
-  watch(/(.*).slim$/) { |_m| `grunt convertslim` }
+  watch(/(.*).slim$/) { |_m| `grunt compilehtml` }
 end
