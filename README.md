@@ -1,5 +1,15 @@
 Have a look at: https://stwarts.github.io/cv  :)
 
+bundle install
+
+yarn global add grunt
+
+http-server
+
+guard
+
+livereload automatically when make changes to slim files
+
 ## Libraries in used
 1. Ruby gems
 
