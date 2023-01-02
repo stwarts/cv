@@ -61,8 +61,9 @@ module.exports = function (grunt) {
       ]
     };
 
+    done = this.async()
     grunt.util.spawn(options, function (error, result, code) {
-      if (code !== 0) { grunt.warn(error, code); }
+      done()
     });
   });
 
@@ -86,5 +87,5 @@ module.exports = function (grunt) {
 
   grunt.registerTask('compilecss', ['concat', 'uncss', 'cssmin']);
   grunt.registerTask('compilehtml', ['convertslim', 'processhtml']);
-  grunt.registerTask('deploy', ['compilecss', 'compilehtml', 'generatepdf'])
-}
+  grunt.registerTask('deploy', ['compilecss', 'compilehtml', 'generatepdf']);
+};
