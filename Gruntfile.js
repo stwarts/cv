@@ -19,6 +19,24 @@ module.exports = function (grunt) {
         }
       }
     },
+    purifycss: {
+      options: {},
+      target: {
+        src: ['converted_index.html'],
+        css: ['index.css'],
+        dest: 'index.css'
+      },
+    },
+    purgecss: {
+      my_target: {
+        options: {
+          content: ['converted_index.html']
+        },
+        files: {
+          'index.css': ['index.css']
+        }
+      }
+    },
     cssmin: {
       options: {
         report: 'min'
@@ -48,6 +66,8 @@ module.exports = function (grunt) {
 
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-uncss');
+  grunt.loadNpmTasks('grunt-purifycss');
+  grunt.loadNpmTasks('grunt-purgecss');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-processhtml');
 
@@ -61,9 +81,9 @@ module.exports = function (grunt) {
       ]
     };
 
-    done = this.async()
+    done = this.async();
     grunt.util.spawn(options, function (error, result, code) {
-      done()
+      done();
     });
   });
 
@@ -86,6 +106,6 @@ module.exports = function (grunt) {
   });
 
   grunt.registerTask('compilecss', ['concat', 'uncss', 'cssmin']);
-  grunt.registerTask('compilehtml', ['convertslim', 'processhtml']);
+  grunt.registerTask('compilehtml', ['convertslim', 'processhtml:dist']);
   grunt.registerTask('deploy', ['compilecss', 'compilehtml', 'generatepdf']);
 };

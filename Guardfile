@@ -23,6 +23,6 @@ ignore(/node_modules/)
 #   watch(%r{file/path}) { `command(s)` }
 #
 guard :shell do
-  watch(/(.*).css$/) { |_m| `grunt compilecss` }
+  watch(/style\/(.*).css$/) { |_m| `grunt compilecss` }
   watch(/(.*).slim$/) { |_m| `grunt compilehtml` }
 end
