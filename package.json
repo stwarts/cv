@@ -10,6 +10,7 @@
     "grunt-contrib-cssmin": "^3.0.0",
     "grunt-processhtml": "^0.4.2",
     "grunt-uncss": "^0.9.1",
+    "livereload": "^0.9.3",
     "sass": "^1.26.10"
   }
 }
