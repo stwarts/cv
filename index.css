@@ -570,7 +570,7 @@ a {
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/opensanscondensed/v22/z7NFdQDnbTkabZAIOl9il_O6KJj73e7Ff0GmDuXMQg.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/opensanscondensed/v23/z7NFdQDnbTkabZAIOl9il_O6KJj73e7Ff0GmDuXMQg.ttf) format('truetype');
 }
  
 /*** uncss> filename: https://fonts.googleapis.com/css?family=Assistant:400,700&display=swap ***/
@@ -579,12 +579,12 @@ a {
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/assistant/v15/2sDPZGJYnIjSi6H75xkZZE1I0yCmYzzQtuZnIGaV2g.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/assistant/v18/2sDPZGJYnIjSi6H75xkZZE1I0yCmYzzQtuZnIGaV2g.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Assistant';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/assistant/v15/2sDPZGJYnIjSi6H75xkZZE1I0yCmYzzQtgFgIGaV2g.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/assistant/v18/2sDPZGJYnIjSi6H75xkZZE1I0yCmYzzQtgFgIGaV2g.ttf) format('truetype');
 }
