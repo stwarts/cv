@@ -105,7 +105,8 @@ module.exports = function (grunt) {
     });
   });
 
-  grunt.registerTask('compilecss', ['concat', 'uncss', 'cssmin']);
+  // grunt.registerTask('compilecss', ['concat', 'uncss', 'cssmin']);
+  grunt.registerTask('compilecss', ['concat', 'cssmin']);
   grunt.registerTask('compilehtml', ['convertslim', 'processhtml:dist']);
   grunt.registerTask('deploy', ['compilecss', 'compilehtml', 'generatepdf']);
 };
