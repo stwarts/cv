@@ -40,7 +40,7 @@ doctype html
               i class='fa fa-file-pdf-o ml-1 text-blue-800' style='font-size: 14px'
         /! /build
 
-        .flex.absolute.mt-8.z-10
+        .flex.mt-8
           .p-0 class='w-2/3'
             .px-8
               .py-8.relative
@@ -51,9 +51,9 @@ doctype html
               / .mb-6
               / == Slim::Template.new('./partials/projects.html.slim').render
 
-          .p-0.px-8 class='w-1/3 border-l'
+          .p-0 class='w-1/3 border-l'
             .text-right.d-flex.flex-column.align-items-center
-              div
+              div.px-8
                 .mb-6
                   amp-img.rounded-full src='https://robohash.org/minimal' width='200px' height='200px'
                 .mb-6
