@@ -83,6 +83,7 @@ module.exports = function (grunt) {
 
     done = this.async();
     grunt.util.spawn(options, function (error, result, code) {
+      grunt.log.error(error);
       done();
     });
   });
