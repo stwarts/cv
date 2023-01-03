@@ -1,57 +1,73 @@
 div
   .title.mb-2
-    | Experience
+    | Work Experience
+
+  / SS
   div.mb-2
-    .flex.justify-between.items-baseline
-      a.text-blue-800.font-bold [href="http://www.goldenowl.asia/" target="_blank"]
-        | OIVAN
-      i.text-sm.opacity-85.font-normal
-        | April 2021 - Present&nbsp;
+    .text-blue-800.text-lg.font-bold
+      | Full-stack Software Engineer
     .text-blue-800.font-bold.opacity-85
-      | Software engineer
-
+      | Survey Exchange platform | Dec 2021 - Present&nbsp;
     .opacity-85
       ul.border-l-4.pl-2.border-vivid-yellow-500.relative
-        == Slim::Template.new('partials/utils/abs_trans_top_border.html.slim').render
-        == Slim::Template.new('partials/utils/abs_trans_bottom_border.html.slim').render
-        / Learned from OIVAN: coordination, communcation, workflow
-        / Hard: big project with around 4-5 teams, ~20 rails services, each feature deployment can have upto 8 involved services
-        / Always have code conflict, every single change in one service can causeside effect in other services
-        / => Carefullness, unit testing, communcation
         li.mb-1
-          | &mdash; Coordinate with a 8-people Scrum team in a micro-services project
+          / the core function was coded in application layer with loop, really hard to understand and impossible for modification and error-prone
+          / -> spliting the core into smaller queries, then each query will be writen in a query class.
+          / -> easy to understand, testable, reusable, each query can be combined together to a bigger query fit other business flow.
+          | &mdash; Restructure and enhance the core function. Changes is made with confidant by intergration tests.
         li.mb-1
-          | &mdash; Commit readable code using design principles and patterns
+          | &mdash; Continuously improve product quality by auditing thoroughly Rails app, React app, UI/UX, and CI/CD.
         li.mb-1
-          | &mdash; Reduce code conflict and prevent miscommunication by following the defined workflow precisely
+          | &mdash; Reply and advice appropriate solution to technical questions, business flow inquiries.
+        li.mb-1
+          | &mdash; Offer suggestions on coding best practice, working process.
 
+  // sak
   div
-    .flex.justify-between.items-baseline
-      a.text-blue-800.font-bold [href="http://www.goldenowl.asia/" target="_blank"]
-        | Golden Owl Consulting
-      i.text-sm.opacity-85.font-normal
-        | Mar 2018 - Apr 2021&nbsp;
+    .text-blue-800.text-lg.font-bold
+      | Software Engineer
     .text-blue-800.font-bold.opacity-85
-      | Vice leader of Ruby team
-
+      | Real Estate and Housing platform | April 2021 - May 2022
     .opacity-85
       ul.border-l-4.pl-2.border-vivid-yellow-500.relative
-        == Slim::Template.new('partials/utils/abs_trans_top_border.html.slim').render
-        == Slim::Template.new('partials/utils/abs_trans_bottom_border.html.slim').render
+        / Learned: coordination, communcation, workflow
+        / Hard: big project with around 4-5 teams, ~20 rails services, each feature can have upto 8 involved services
+        / Always have code conflict, every single change in one service can causeside effect in other services
+        / => Carefullness, unit/intergration testing, communcation
+        / Document everything in confluence including business logic, edge cases, API spec, tech, gem, etc
         li.mb-1
-          / Demo how to code properly, refactoring, adding index for searching
-          | &mdash; Code reviewing, managing, mentoring, and training
+          | &mdash; Coordinated smoothly with a Scrum team of 8 people in a micro-services project using Ruby on Rails and Angular.
+        li.mb-1
+          | &mdash; Provided readable, maintainable, and clean code by applying SOLID, design patterns, and strictly follow coding convention.
+        li.mb-1
+          | &mdash; Commited reliable and verified functions by provide high coverage unit tests, intergration tests.
+        li.mb-1
+          | &mdash; Reduced and prevented conflict, miscommunication by following the defined workflow precisely.
+  / bib and col
+  div
+    .text-blue-800.text-lg.font-bold
+      | Ruby on Rails Developer
+    .text-blue-800.font-bold.opacity-85
+      | Outsourcing with multiple projects | March 2018 - April 2021
+    .opacity-85
+      ul.border-l-4.pl-2.border-vivid-yellow-500.relative
         li.mb-1
           / How?
           / Upgrade rails version, development code reload 10 times faster (30s to 3s)
           / Upgrade react version, reduce code reload by 70% (10s to 3s)
           / Improved test execution time by half
-          | &mdash; Refine and tune clients's application
+          / Rails application is really slow on development using gem administrate
+          / -> upgrade to higher rails version solve it
+          | &mdash; Identified bottle neck, detect max RPS, and report posible application issues at its peak.
+        li.mb-1
+          | &mdash; Automated processing 10k+ orders and post-payment procedure by integrating payment gateway and 3rd-parties.
+        li.mb-1
+          | &mdash; Reduced unit tests elapsed time from 7 minutes to 3 minutes.
+        li.mb-1
+          | &mdash; Analayzed and improved development code reloading in both Rails app and React app.
         / By comparing among libraries, solutions
         / Which criteria to compare?
         / => Pros and cons, customization, scalability, possibility, time taken, needed at that time
-        /li.mb-1
-          | &mdash; Analyze client's requirements thoroughly to consult and apply appropriate solutions
         /li.mb-1
           / They may ask how?
           / => Design pattern/design principles
