@@ -42,7 +42,7 @@ doctype html
         /! /build
 
         .flex.mt-8
-          .p-0 class='w-1/3 border-r'
+          .p-0 class='w-1/3'
             .text-center.d-flex.flex-column.align-items-center
               .px-10.mt-12
                 .mb-6
@@ -57,7 +57,7 @@ doctype html
                   == Slim::Template.new('./partials/socials.html.slim').render
 
           .p-0 class='w-2/3'
-            .px-10
+            .pr-10
               .py-8.relative
                 == Slim::Template.new('./partials/heading.html.slim').render
                 == Slim::Template.new('./partials/profile.html.slim').render
