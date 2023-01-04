@@ -10,6 +10,8 @@ yarn install
 bundle exec guard
 
 livereload 'index.html'
+
+sass --watch style/application.scss:style/application.css
 ```
 
 ## Libraries in used

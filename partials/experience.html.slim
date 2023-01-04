@@ -1,15 +1,17 @@
 div
-  .title.mb-2
+  .title.text-lg.mb-2
     | Work Experience
 
   / SS
   div.mb-2
-    .text-blue-800.text-lg.font-bold
+    .font-semibold
       | Full-stack Software Engineer
-    .text-blue-800.font-bold.opacity-85
-      | Survey Exchange platform | Dec 2021 - Present&nbsp;
-    .opacity-85
-      ul.border-l-4.pl-2.border-vivid-yellow-500.relative
+    p
+      span.italic Survey Exchange platform
+      | &nbsp;|&nbsp;
+      span.italic Dec 2021 - Present
+    div
+      ul.relative
         li.mb-1
           / the core function was coded in application layer with loop, really hard to understand and impossible for modification and error-prone
           / -> spliting the core into smaller queries, then each query will be writen in a query class.
@@ -21,13 +23,16 @@ div
           | &mdash; Reply and advice appropriate solutions to technical questions, and business flow inquiries.
 
   // sak
-  div
-    .text-blue-800.text-lg.font-bold
+  div.mt-4
+    .font-semibold
       | Software Engineer
-    .text-blue-800.font-bold.opacity-85
-      | Real Estate and Housing platform | April 2021 - May 2022
-    .opacity-85
-      ul.border-l-4.pl-2.border-vivid-yellow-500.relative
+    p
+      |
+      span.italic Real Estate and Housing platform
+      | &nbsp;|&nbsp;
+      span.italic April 2021 - May 2022
+    div
+      ul.relative
         / Learned: coordination, communcation, workflow
         / Hard: big project with around 4-5 teams, ~20 rails services, each feature can have upto 8 involved services
         / Always have code conflict, every single change in one service can causeside effect in other services
@@ -42,13 +47,15 @@ div
           | &mdash; Performed code review, outlined poor pratices, and made recommendations for team members on best practices.
 
   / bib and col
-  div
-    .text-blue-800.text-lg.font-bold
+  div.mt-4
+    .font-semibold
       | Ruby on Rails Developer
-    .text-blue-800.font-bold.opacity-85
-      | Outsourcing with multiple projects | March 2018 - April 2021
-    .opacity-85
-      ul.border-l-4.pl-2.border-vivid-yellow-500.relative
+    p
+      span.italic Various projects
+      | &nbsp;|&nbsp;
+      span.italic March 2018 - April 2021
+    div
+      ul.relative
         li.mb-1
           | &mdash; Automated processing 10k+ orders and post-payment procedure by integrating payment gateway and 3rd-parties.
         li.mb-1
