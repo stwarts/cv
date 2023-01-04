@@ -37,7 +37,7 @@ livereload 'index.html'
     `grunt compilecss`
 
 2. Compiling tailwind
-    `npx tailwind build -i style/tailwind.scss -o ./style/compiled_tailwind.css`
+    `npx tailwind build style/tailwind.scss -o style/compiled_tailwind.css`
 
 2. Compiling html
 
