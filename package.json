@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "grunt-purifycss": "^0.1.2",
-    "lodash": "4.17.19",
+    "lodash": "4.17.21",
     "purgecss": "^5.0.0",
     "tailwindcss": "^1.6.0"
   },
