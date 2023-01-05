@@ -83,7 +83,7 @@ module.exports = function (grunt) {
 
     done = this.async();
     grunt.util.spawn(options, function (error, result, code) {
-      grunt.log.error(error);
+      error && error.length && grunt.log.error(error);
       done();
     });
   });
@@ -100,9 +100,10 @@ module.exports = function (grunt) {
       ]
     };
 
+    done = this.async();
     grunt.util.spawn(options, function (error, result, code) {
-      console.log(result);
       if (code !== 0) { grunt.warn(error, code); }
+      done();
     });
   });
 
