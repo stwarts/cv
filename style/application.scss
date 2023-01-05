@@ -3,10 +3,6 @@ $width: 794px;
 
 $accent-border-color: #FFC70B;
 
-body {
-  font-family: 'Assistant', sans-serif;
-}
-
 .a4-size {
   height: $width * $paper-ratio;
   width: $width;
@@ -21,4 +17,9 @@ body {
   z-index: 100;
   top: 0;
   right: 0;
+}
+
+// Avatar style
+amp-img img {
+  object-fit: contain;
 }

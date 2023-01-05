@@ -1,16 +1,21 @@
 Have a look at: https://stwarts.github.io/cv  :)
 
+# Getting started
+
+```bash
 bundle install
 
-yarn global add grunt
+yarn install
 
-http-server
+bundle exec guard
 
-guard
+livereload 'index.html'
 
-livereload automatically when make changes to slim files
+sass --watch style/application.scss:style/application.css
+```
 
 ## Libraries in used
+
 1. Ruby gems
 
     + slim: for partialize sections
@@ -28,9 +33,13 @@ livereload automatically when make changes to slim files
     + grunt and grunt extensions: *concat*, *uncss*, *cssmin*, and *processhtml*
 
 ## Usage
+
 1. Compiling css
 
     `grunt compilecss`
+
+2. Compiling tailwind
+    `npx tailwind build style/tailwind.scss -o style/compiled_tailwind.css`
 
 2. Compiling html
 

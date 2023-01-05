@@ -1,6 +1,3 @@
-body {
-  font-family: 'Assistant', sans-serif; }
-
 .a4-size {
   height: 1122.8855685456px;
   width: 794px; }
@@ -13,5 +10,8 @@ body {
   z-index: 100;
   top: 0;
   right: 0; }
+
+amp-img img {
+  object-fit: contain; }
 
 /*# sourceMappingURL=application.css.map */
