@@ -46,7 +46,8 @@ doctype html
             .text-center.d-flex.flex-column.align-items-center
               .px-10.mt-12
                 .mb-6
-                  amp-img.rounded-full src='resource/avatar.png' width='200px' height='200px'
+                  div.relative.w-full style='aspect-ratio: 1 / 1;'
+                    amp-img.rounded-full src='resource/avatar.png' layout='fill'
                 .mb-6
                   == Slim:: Template.new('./partials/contact.html.slim').render
                 .mb-6

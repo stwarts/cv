@@ -23,3 +23,8 @@ $accent-border-color: #FFC70B;
 amp-img img {
   object-fit: contain;
 }
+
+.i-amphtml-fill-content {
+  padding-top: 1.25rem !important;
+  background-image: linear-gradient(to right, #d8e0e8, #9eb4c1);
+}
