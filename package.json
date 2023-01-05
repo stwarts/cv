@@ -1,6 +1,8 @@
 {
   "dependencies": {
+    "grunt-purifycss": "^0.1.2",
     "lodash": "4.17.19",
+    "purgecss": "^5.0.0",
     "tailwindcss": "^1.6.0"
   },
   "devDependencies": {
@@ -9,7 +11,9 @@
     "grunt-contrib-concat": "^1.0.1",
     "grunt-contrib-cssmin": "^3.0.0",
     "grunt-processhtml": "^0.4.2",
+    "grunt-purgecss": "^5.0.0",
     "grunt-uncss": "^0.9.1",
+    "livereload": "^0.9.3",
     "sass": "^1.26.10"
   }
 }

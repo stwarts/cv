@@ -19,15 +19,10 @@
 
 ignore(/node_modules/)
 
-guard 'livereload' do
-  watch(/.*\.html$/)
-  watch(/.*\.css$/)
-end
-
 # Add files and commands to this file, like the example:
 #   watch(%r{file/path}) { `command(s)` }
 #
 guard :shell do
-  watch(/(.*).css$/) { |_m| `grunt compilecss` }
+  watch(/style\/(.*).css$/) { |_m| `grunt compilecss && grunt compilehtml` }
   watch(/(.*).slim$/) { |_m| `grunt compilehtml` }
 end

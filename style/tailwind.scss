@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 .title {
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Encode Sans Semi Condensed', sans-serif;
 
-  @apply uppercase text-blue-800 font-bold tracking-wider text-lg;
+  @apply uppercase text-gray-800 tracking-widest;
 }
