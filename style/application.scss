@@ -18,3 +18,8 @@ $accent-border-color: #FFC70B;
   top: 0;
   right: 0;
 }
+
+// Avatar style
+amp-img img {
+  object-fit: contain;
+}

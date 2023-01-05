@@ -11,6 +11,9 @@
   top: 0;
   right: 0; }
 
+amp-img img {
+  object-fit: contain; }
+
 /*# sourceMappingURL=application.css.map */
 ;/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
